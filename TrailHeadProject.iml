@@ -5,20 +5,11 @@
       <entry key="th_con_app" value="RETRIEVED" />
     </managedPackages>
     <type2Names>
-      <SFMetaTypeNamesState type="STATIC_RESOURCE" setAll="true">
+      <SFMetaTypeNamesState type="APEX_PAGE" setAll="true">
         <option name="myNames">
           <set>
-            <option value="th_con_app__thBackground" />
-            <option value="th_con_app__thBoldotf" />
-            <option value="th_con_app__thBoldttf" />
-            <option value="th_con_app__thLogo" />
-          </set>
-        </option>
-      </SFMetaTypeNamesState>
-      <SFMetaTypeNamesState type="INSTALLED_PACKAGE" setAll="true">
-        <option name="myNames">
-          <set>
-            <option value="th_con_app" />
+            <option value="helloWorld" />
+            <option value="th_con_app__ThHomepage" />
           </set>
         </option>
       </SFMetaTypeNamesState>
@@ -77,6 +68,26 @@
             <option value="Task" />
             <option value="User" />
             <option value="UserProvisioningRequest" />
+          </set>
+        </option>
+      </SFMetaTypeNamesState>
+      <SFMetaTypeNamesState type="APEX_CLASS" setAll="true">
+        <option name="myNames">
+          <set>
+            <option value="AccountDeletion" />
+            <option value="AccountHandler" />
+            <option value="ContactAndLeadSearch" />
+            <option value="ContactSearch" />
+            <option value="EmailManager" />
+            <option value="HelloWorld" />
+            <option value="RandomContactFactory" />
+            <option value="StringArrayTest" />
+            <option value="TemperatureConverter" />
+            <option value="TemperatureConverterTest" />
+            <option value="TestAccountDeletion" />
+            <option value="TestRestrictContactByName" />
+            <option value="TestVerifyDate" />
+            <option value="VerifyDate" />
           </set>
         </option>
       </SFMetaTypeNamesState>
@@ -141,17 +152,6 @@
           </set>
         </option>
       </SFMetaTypeNamesState>
-      <SFMetaTypeNamesState type="FLOW" setAll="true">
-        <option name="myNames">
-          <set>
-            <option value="Contact_Synchronize" />
-            <option value="Create_Contact_Flow" />
-            <option value="MockProcess-1" />
-            <option value="New_Customer_Flow" />
-            <option value="Opportunity_Management" />
-          </set>
-        </option>
-      </SFMetaTypeNamesState>
       <SFMetaTypeNamesState type="APEX_TRIGGER" setAll="true">
         <option name="myNames">
           <set>
@@ -163,66 +163,12 @@
           </set>
         </option>
       </SFMetaTypeNamesState>
-      <SFMetaTypeNamesState type="LIGHTNING_BUNDLE" setAll="true" />
-      <SFMetaTypeNamesState type="APEX_CLASS" setAll="true">
-        <option name="myNames">
-          <set>
-            <option value="AccountDeletion" />
-            <option value="AccountHandler" />
-            <option value="ContactAndLeadSearch" />
-            <option value="ContactSearch" />
-            <option value="EmailManager" />
-            <option value="RandomContactFactory" />
-            <option value="StringArrayTest" />
-            <option value="TemperatureConverter" />
-            <option value="TemperatureConverterTest" />
-            <option value="TestAccountDeletion" />
-            <option value="TestRestrictContactByName" />
-            <option value="TestVerifyDate" />
-            <option value="VerifyDate" />
-          </set>
-        </option>
-      </SFMetaTypeNamesState>
-      <SFMetaTypeNamesState type="CUSTOM_LABELS" setAll="true">
-        <option name="myNames">
-          <set>
-            <option value="CustomLabels" />
-          </set>
-        </option>
-      </SFMetaTypeNamesState>
       <SFMetaTypeNamesState type="CUSTOM_TAB" setAll="true">
         <option name="myNames">
           <set>
             <option value="Offer__c" />
             <option value="Property__c" />
             <option value="th_con_app__Welcome" />
-          </set>
-        </option>
-      </SFMetaTypeNamesState>
-      <SFMetaTypeNamesState type="APEX_PAGE" setAll="true">
-        <option name="myNames">
-          <set>
-            <option value="th_con_app__ThHomepage" />
-          </set>
-        </option>
-      </SFMetaTypeNamesState>
-      <SFMetaTypeNamesState type="CUSTOM_APPLICATION" setAll="true">
-        <option name="myNames">
-          <set>
-            <option value="standard__AppLauncher" />
-            <option value="standard__Chatter" />
-            <option value="standard__Community" />
-            <option value="standard__Content" />
-            <option value="standard__LightningSales" />
-            <option value="standard__LightningSalesConsole" />
-            <option value="standard__LightningService" />
-            <option value="standard__Marketing" />
-            <option value="standard__Platform" />
-            <option value="standard__Sales" />
-            <option value="standard__Service" />
-            <option value="standard__ServiceConsole" />
-            <option value="standard__Sites" />
-            <option value="th_con_app__Trailhead_Playground" />
           </set>
         </option>
       </SFMetaTypeNamesState>
@@ -272,67 +218,123 @@
           </set>
         </option>
       </SFMetaTypeNamesState>
+      <SFMetaTypeNamesState type="CUSTOM_LABELS" setAll="true">
+        <option name="myNames">
+          <set>
+            <option value="CustomLabels" />
+          </set>
+        </option>
+      </SFMetaTypeNamesState>
+      <SFMetaTypeNamesState type="CUSTOM_APPLICATION" setAll="true">
+        <option name="myNames">
+          <set>
+            <option value="standard__AppLauncher" />
+            <option value="standard__Chatter" />
+            <option value="standard__Community" />
+            <option value="standard__Content" />
+            <option value="standard__LightningSales" />
+            <option value="standard__LightningSalesConsole" />
+            <option value="standard__LightningService" />
+            <option value="standard__Marketing" />
+            <option value="standard__Platform" />
+            <option value="standard__Sales" />
+            <option value="standard__Service" />
+            <option value="standard__ServiceConsole" />
+            <option value="standard__Sites" />
+            <option value="th_con_app__Trailhead_Playground" />
+          </set>
+        </option>
+      </SFMetaTypeNamesState>
+      <SFMetaTypeNamesState type="FLOW" setAll="true">
+        <option name="myNames">
+          <set>
+            <option value="Contact_Synchronize" />
+            <option value="Create_Contact_Flow" />
+            <option value="MockProcess-1" />
+            <option value="New_Customer_Flow" />
+            <option value="Opportunity_Management" />
+          </set>
+        </option>
+      </SFMetaTypeNamesState>
       <SFMetaTypeNamesState type="APEX_COMPONENT" setAll="true" />
+      <SFMetaTypeNamesState type="LIGHTNING_BUNDLE" setAll="true" />
+      <SFMetaTypeNamesState type="STATIC_RESOURCE" setAll="true">
+        <option name="myNames">
+          <set>
+            <option value="th_con_app__thBackground" />
+            <option value="th_con_app__thBoldotf" />
+            <option value="th_con_app__thBoldttf" />
+            <option value="th_con_app__thLogo" />
+          </set>
+        </option>
+      </SFMetaTypeNamesState>
+      <SFMetaTypeNamesState type="INSTALLED_PACKAGE" setAll="true">
+        <option name="myNames">
+          <set>
+            <option value="th_con_app" />
+          </set>
+        </option>
+      </SFMetaTypeNamesState>
     </type2Names>
     <builtIn>
       <type value="WEB_LINK" />
-      <type value="CUSTOM_FIELD" />
       <type value="CUSTOM_OBJECT" />
+      <type value="CUSTOM_FIELD" />
     </builtIn>
     <unmananged>
-      <type value="STATIC_RESOURCE" />
-      <type value="POST_TEMPLATE" />
-      <type value="INSTALLED_PACKAGE" />
-      <type value="CUSTOM_SITE" />
-      <type value="PERMISSION_SET" />
-      <type value="APPROVAL_PROCESS" />
-      <type value="QUEUE" />
-      <type value="CUSTOM_FIELD" />
-      <type value="CUSTOM_OBJECT" />
-      <type value="LAYOUT" />
-      <type value="SETTINGS" />
-      <type value="WEB_LINK" />
-      <type value="REPORT" />
-      <type value="COMMUNITY" />
-      <type value="CUSTOM_OBJECT_TRANSLATION" />
-      <type value="FLOW_DEFINITION" />
-      <type value="ROLE" />
-      <type value="FLOW" />
-      <type value="APEX_TRIGGER" />
-      <type value="CUSTOM_PERMISSION" />
-      <type value="LIGHTNING_BUNDLE" />
-      <type value="APEX_TEST_SUITE" />
-      <type value="SITE_DOT_COM" />
-      <type value="APEX_CLASS" />
-      <type value="QUICK_ACTION" />
       <type value="COMMUNITY_THEME_DEFINITION" />
-      <type value="HOME_PAGE_COMPONENT" />
-      <type value="HOME_PAGE_LAYOUT" />
-      <type value="PORTAL" />
-      <type value="GROUP" />
-      <type value="PLATFORM_CACHE_PARTITION" />
-      <type value="GLOBAL_VALUE_SET" />
-      <type value="CUSTOM_METADATA" />
+      <type value="APEX_PAGE" />
+      <type value="CALL_CENTER" />
+      <type value="PERMISSION_SET" />
+      <type value="WEB_LINK" />
+      <type value="QUICK_ACTION" />
+      <type value="CUSTOM_OBJECT" />
+      <type value="APEX_CLASS" />
+      <type value="SETTINGS" />
+      <type value="POST_TEMPLATE" />
       <type value="ASSIGNMENT_RULES" />
-      <type value="SHARING_RULES" />
+      <type value="COMMUNITY" />
+      <type value="LAYOUT" />
+      <type value="APPROVAL_PROCESS" />
+      <type value="APEX_TRIGGER" />
+      <type value="HOME_PAGE_LAYOUT" />
+      <type value="ROLE" />
+      <type value="FLOW_DEFINITION" />
+      <type value="CUSTOM_PERMISSION" />
+      <type value="COMMUNITY_TEMPLATE_DEFINITION" />
+      <type value="GLOBAL_VALUE_SET" />
+      <type value="CUSTOM_TAB" />
+      <type value="WORKFLOW" />
       <type value="CUSTOM_LABELS" />
+      <type value="HOME_PAGE_COMPONENT" />
+      <type value="PORTAL" />
+      <type value="SHARING_RULES" />
+      <type value="CUSTOM_OBJECT_TRANSLATION" />
+      <type value="CUSTOM_APPLICATION" />
+      <type value="CUSTOM_SITE" />
+      <type value="SITE_DOT_COM" />
+      <type value="REPORT_TYPE" />
+      <type value="PLATFORM_CACHE_PARTITION" />
+      <type value="GROUP" />
+      <type value="CUSTOM_METADATA" />
+      <type value="QUEUE" />
+      <type value="REPORT" />
+      <type value="SHARING_SET" />
+      <type value="FLOW" />
+      <type value="APEX_TEST_SUITE" />
+      <type value="STATIC_RESOURCE" />
+      <type value="LIGHTNING_BUNDLE" />
+      <type value="APEX_COMPONENT" />
+      <type value="INSTALLED_PACKAGE" />
+      <type value="CUSTOM_FIELD" />
       <type value="PROFILE" />
       <type value="TRANSLATIONS" />
-      <type value="CUSTOM_TAB" />
-      <type value="COMMUNITY_TEMPLATE_DEFINITION" />
-      <type value="APEX_PAGE" />
-      <type value="SHARING_SET" />
-      <type value="CUSTOM_APPLICATION" />
-      <type value="WORKFLOW" />
-      <type value="REPORT_TYPE" />
-      <type value="APEX_COMPONENT" />
-      <type value="CALL_CENTER" />
     </unmananged>
     <managed>
       <type value="WEB_LINK" />
+      <type value="CUSTOM_OBJECT" />
       <type value="APEX_CLASS" />
       <type value="CUSTOM_FIELD" />
-      <type value="CUSTOM_OBJECT" />
     </managed>
     <components>
       <SFMetaComponentState type="ApexClass" chosen="true" isMajor="true" />

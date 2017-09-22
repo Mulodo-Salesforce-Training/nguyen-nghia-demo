@@ -1,0 +1,23 @@
+<apex:page standardController="Account">
+    <!--FINE-GRAINED COMPONENT-->
+    <!--<apex:detail relatedList="false"/>-->
+    <!--<apex:relatedList list="Contacts"/>-->
+    <!--<apex:relatedList list="Opportunities" pageSize="5"/>-->
+    <!--CUSTOM FIELD-->
+    <!--<apex:outputField value="{!Account.Name}"/>-->
+    <!--<apex:outputField value="{!Account.Industry}"/>-->
+    <!--PUT CUSTOM FIELD IN BLOCK-->
+    <apex:pageBlock title="Account Detail">
+        <apex:pageBlockSection>
+            <apex:outputField value="{!Account.Name}"/>
+            <apex:outputField value="{!Account.Industry}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <!--ITERATION COMPONENT-->
+    <apex:pageBlock title="Related Contact">
+        <apex:pageBlockTable value="{!Account.contacts}" var="contact">
+            <apex:column value="{!contact.Name}"/>
+            <apex:column value="{!contact.FirstName}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

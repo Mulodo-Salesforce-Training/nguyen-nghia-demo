@@ -1,0 +1,4 @@
+<!--EXAMPLE EXAM OF DISPLAY RECORDS, FIELDS AND TABLES-->
+<apex:page standardController="opportunity">
+    <apex:detail />
+</apex:page>

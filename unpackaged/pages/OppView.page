@@ -1,0 +1,11 @@
+<!--EXAMPLE EXAM OF DISPLAY RECORDS, FIELDS AND TABLES-->
+<apex:page standardController="Opportunity">
+    <apex:pageBlock title="Opportunity">
+        <apex:pageBlockSection>
+            <apex:outputField value="{!Opportunity.name}"/>
+            <apex:outputField value="{!Opportunity.amount}"/>
+            <apex:outputField value="{!Opportunity.closeDate}"/>
+            <apex:outputField value="{!Opportunity.account.name}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

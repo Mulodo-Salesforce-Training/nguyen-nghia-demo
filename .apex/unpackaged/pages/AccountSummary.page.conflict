@@ -1,0 +1,14 @@
+<!--DEMO PAGE FOR USE STANDARD CONTROLLERS-->
+<apex:page standardController="account" sidebar="false">
+    <apex:pageBlock title="Account Summary">
+        <apex:pageBlockSection >
+            Name: {! Account.Name } <br/>
+            2
+            Phone: {! Account.Phone } <br/>
+            3
+            Industry: {! Account.Industry } <br/>
+            4
+            Revenue: {! Account.AnnualRevenue } <br/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:page >
+    <apex:pageBlock title="User Status">
+        <apex:pageBlockSection columns="1">
+            <!--CASE INSENSTIVE AND IGNORE BLANK SPACE-->
+            {!$User.firstName} {!$User.lastName}
+            {!$User.userName}
+        </apex:pageBlockSection>
+        <apex:pageBlockSection columns="1">
+            <p>{! IF( CONTAINS('salesforce.com','force.com'),
+                    'Yep', 'Nope') }</p>
+            <p>{! IF( DAY(TODAY()) < 15,
+                    'Before the 15th', 'The 15th or after') }</p>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
