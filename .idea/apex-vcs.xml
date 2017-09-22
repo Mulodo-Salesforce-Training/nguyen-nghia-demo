@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ApexVcsIndex">
     <index-record>
-      <option name="path" value="/unpackaged/pages/otherHelloWorld.page" />
+      <option name="path" value="/unpackaged/classes/NewCaseListController.cls" />
       <option name="type" value="MODIFIED" />
     </index-record>
     <index-record>
       <option name="path" value="/unpackaged/helloWorld.page-meta.xml" />
       <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/unpackaged/pages/otherHelloWorld.page" />
+      <option name="type" value="MODIFIED" />
     </index-record>
   </component>
 </project>

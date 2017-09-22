@@ -1,0 +1,57 @@
+<!--USING STANDARD LIST WITH LIST VIEW FILTERING-->
+<apex:page standardController="Contact" recordSetVar="contacts">
+    <apex:form>
+        <apex:pageBlock title="Contact List" id="contact_list">
+            Filter:
+            <!--DEFAULT STANDARD CONTROLLER VAR: FILTERID, LISTVIEWOPTIONS-->
+            <!--USING SUPPORT OF ACTION SUPPORT TO RERENDERLIST-->
+            <apex:selectList value="{! filterId}" size="1">
+                <apex:selectOptions value="{! listViewOptions}"/>
+                <apex:actionSupport event="onchange" reRender="contact_list"/>
+            </apex:selectList>
+            <apex:pageBlockTable value="{!contacts}" var="contact">
+                <apex:column value="{!contact.FirstName}"/>
+                <apex:column value="{!contact.LastName}"/>
+                <apex:column value="{!contact.Email}"/>
+                <apex:column value="{!contact.Account.Name}"/>
+            </apex:pageBlockTable>
+            <!--PAGINATION-->
+            <table style="width: 100%"><tr>
+                <!--PAGE X OF Y-->
+                <td align="left">
+                    Page: <apex:outputText
+                        value=" {!PageNumber} of {! CEILING(ResultSize / PageSize) }"/>
+                </td>
+                <td align="center">
+                    <!-- Previous page -->
+                    <!-- active -->
+                    <apex:commandLink action="{! Previous }" value="« Previous"
+                                      rendered="{! HasPrevious }"/>
+                    <!-- inactive (no earlier pages) -->
+                    <apex:outputText style="color: #ccc;" value="« Previous"
+                                     rendered="{! NOT(HasPrevious) }"/>
+
+                    &nbsp;&nbsp;
+
+                    <!-- Next page -->
+                    <!-- active -->
+                    <apex:commandLink action="{! Next }" value="Next »"
+                                      rendered="{! HasNext }"/>
+                    <!-- inactive (no more pages) -->
+                    <apex:outputText style="color: #ccc;" value="Next »"
+                                     rendered="{! NOT(HasNext) }"/>
+                </td >
+                <!--RECORD PER PAGE-->
+                <td align="right">
+                    Records per page:
+                    <apex:selectList value="{! PageSize }" size="1">
+                        <apex:selectOption itemValue="5" itemLabel="5"/>
+                        <apex:selectOption itemValue="20" itemLabel="20"/>
+                        <apex:actionSupport event="onchange" reRender="contact_list"/>
+                    </apex:selectList>
+                </td>
+            </tr></table>
+        </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

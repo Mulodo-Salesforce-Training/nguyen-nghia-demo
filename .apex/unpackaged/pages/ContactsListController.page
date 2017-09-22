@@ -1,0 +1,34 @@
+<!--EXAMPLE USING CUSTOM CONTROLLER-->
+<apex:page controller="ContactListController">
+    <apex:form>
+        <apex:pageBlock title="Contact List Controller" id="contact_list">
+            <apex:pageBlockTable value="{!contacts}" var="contact">
+                <!--<apex:column value="{!contact.LastName}"/>-->
+                <!--USING FACET AND COMMAND LINK-->
+                <apex:column value="{!contact.LastName}">
+                    <apex:facet name="header">
+                        <!--HARD CODE-->
+                        <!--<apex:commandLink action="{! sortByLastName}" reRender="contact_list">Last Name</apex:commandLink>-->
+                        <!--DYNAMIC TITLE-->
+                        <apex:commandLink action="{! sortByLastName}" reRender="contact_list">
+                            {! $ObjectType.Contact.Fields.LastName.Label}
+                        </apex:commandLink>
+                    </apex:facet>
+                </apex:column>
+                <!--<apex:column value="{!contact.FirstName}"/>-->
+                <apex:column value="{!contact.FirstName}">
+                    <apex:facet name="header">
+                        <!--HARD CODE-->
+                        <!--<apex:commandLink action="{! sortByFirstName}" reRender="contact_list">First Name</apex:commandLink>-->
+                        <!--DYNAMIC TITLE-->
+                        <apex:commandLink action="{! sortByFirstName}" reRender="contact_list">
+                            {! $ObjectType.Contact.Fields.FirstName.Label}
+                        </apex:commandLink>
+                    </apex:facet>
+                </apex:column>
+                <apex:column value="{!contact.Title}"/>
+                <apex:column value="{!contact.Email}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

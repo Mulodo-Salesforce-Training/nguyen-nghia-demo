@@ -1,0 +1,32 @@
+<!--EXAMPLE INPUT DATA USING FORMS-->
+<apex:page standardController="Account">
+    <h1>Edit Account</h1>
+    <apex:form >
+        <apex:pageBlock title="Edit Account">
+            <!--VALIDATION MESSAGE-->
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!Account.name}" />
+                <apex:inputField value="{!Account.Phone}" />
+                <apex:inputField value="{!Account.Industry}" />
+                <apex:inputField value="{!Account.AnnualRevenue}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="save"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    <!--URL DEMO-->
+    <apex:pageBlock title="Related Contacts">
+        <apex:pageBlockTable value="{!Account.Contacts}" var="contact">
+            <apex:column >
+                <apex:outputLink value="{!URLFOR($Action.Contact.Edit, contact.id)}"/>
+                <apex:outputLink value="{!URLFOR($Action.Contact.Delete, contact.id)}"/>
+            </apex:column>
+            <apex:column value="{!contact.Name}"/>
+            <apex:column value="{!contact.Title}"/>
+            <apex:column value="{!contact.Phone}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+
+</apex:page>
