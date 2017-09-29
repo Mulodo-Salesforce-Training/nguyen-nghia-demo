@@ -2,177 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f15e1d6f-5894-40b0-abe9-f8ecd5c01cc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/applications/Mulodo_Recruitment.app" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/applications/Mulodo_Recruitment_Lightning.app" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/applications/Nghia_Nguyen.app" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/CandidateEmailTemplateHelper.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/CandidateFormControllerExtension.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/CandidateWeatherController.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/EmailHelperUtil.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/TestEmailHelperUtil.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/TestEmailSenderTrigger.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/TestEmailTemplateHelper.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/TestWeatherController.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/TestWeatherVM.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/WeatherViewModel.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/classes/candidateControllerExtension.cls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/installedPackages/sf_com_apps.installedPackage" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/Candidate__c-Candidate Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/Candidate__c-Custom Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/Candidate__c-My Candidate Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/External_App_Setting__mdt-OpenWeather Setting Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/Job_Application__c-Custom Job App Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/Job_Application__c-Job Application Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/Position__c-Custom Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/Position__c-Position Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/TestRecordType__c-Custom Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/TestRecordType__c-TestRecordType Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/recordTypeDemo__c-Custom Record Type Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/layouts/recordTypeDemo__c-Record Type Demos Layout.layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/objects/Candidate__c.object" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/objects/External_App_Setting__mdt.object" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/objects/Job_Application__c.object" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/objects/Position__c.object" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/objects/TestRecordType__c.object" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/objects/recordTypeDemo__c.object" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/pages/CandidateCustomList.page" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/pages/CandidateWeather.page" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/pages/JobAppplicationForm.page" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/staticresources/SLDSValidator_js.resource" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/staticresources/candidate_form_remoting_js.resource" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/staticresources/jQuery.resource" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/staticresources/jQuery_js.resource" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/tabs/Candidate_Custom.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/tabs/Candidate__c.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/tabs/Job_Application__c.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/tabs/Position__c.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/tabs/TestRecordType__c.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/tabs/recordTypeDemo__c.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/triggers/EmailSender.trigger" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/triggers/PositionTrigger.trigger" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/workflows/Candidate__c.workflow" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/workflows/External_App_Setting__mdt.workflow" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/workflows/Job_Application__c.workflow" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/workflows/Position__c.workflow" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/workflows/TestRecordType__c.workflow" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackaged/workflows/recordTypeDemo__c.workflow" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/applications/th_con_app__Trailhead_Playground.app" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/AccountDeletion.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/AccountHandler.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/ContactAndLeadSearch.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/ContactListController.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/ContactSearch.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/EmailManager.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/HelloWorld.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/NewCaseListController.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/RandomContactFactory.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/StringArrayTest.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/TemperatureConverter.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/TemperatureConverterTest.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/TestAccountDeletion.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/TestRestrictContactByName.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/TestVerifyDate.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/classes/VerifyDate.cls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/flows/MockProcess-1.flow" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/installedPackages/th_con_app.installedPackage" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/layouts/Favorite__c-Favorite Layout.layout" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/layouts/ImportDemoObj__c-ImportDemoObj Layout.layout" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/layouts/Offer__c-Offer Layout.layout" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/layouts/Project__c-Project Layout.layout" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/layouts/Property__c-Property Layout.layout" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/objects/Favorite__c.object" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/objects/ImportDemoObj__c.object" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/objects/Offer__c.object" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/objects/Project__c.object" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/objects/Property__c.object" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/AccountDetail .page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/AccountEdit.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/AccountList.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/AccountSummary.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/ContactList.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/ContactView.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/ContactsListController.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/CreateContact.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/DisplayImage.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/DisplayUserInfo.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/HelloJQuery.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/ListContactPractice.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/NewCaseList.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/OppView.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/ShowImage.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/UserStatus.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/helloWorld.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/otherHelloWorld.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/pages/th_con_app__ThHomepage.page" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/staticresources/th_con_app__thBackground.resource" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/staticresources/th_con_app__thBoldotf.resource" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/staticresources/th_con_app__thBoldttf.resource" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/staticresources/th_con_app__thLogo.resource" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/tabs/Offer__c.tab" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/tabs/Property__c.tab" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/tabs/th_con_app__Welcome.tab" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/triggers/AccountAddressTrigger.trigger" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/triggers/AccountDeletion.trigger" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/triggers/ClosedOpportunityTrigger.trigger" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/triggers/RestrictContactByName.trigger" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/triggers/exampleTrigger.trigger" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/workflows/Favorite__c.workflow" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/workflows/ImportDemoObj__c.workflow" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/workflows/Offer__c.workflow" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/workflows/Project__c.workflow" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unpackaged/workflows/Property__c.workflow" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__AppLauncher.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__AppLauncher.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__Chatter.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__Chatter.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__Community.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__Community.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__Content.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__Content.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__LightningSales.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__LightningSales.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__LightningSalesConsole.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__LightningSalesConsole.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__LightningService.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__LightningService.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__Marketing.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__Marketing.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__Platform.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__Platform.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__Sales.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__Sales.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__Service.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__Service.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__ServiceConsole.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__ServiceConsole.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/applications/standard__Sites.app" afterPath="$PROJECT_DIR$/unpackaged/applications/standard__Sites.app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Account-Account %28Marketing%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Account-Account %28Marketing%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Account-Account %28Sales%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Account-Account %28Sales%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Account-Account %28Support%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Account-Account %28Support%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Account-Account Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Account-Account Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Campaign-Campaign Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Campaign-Campaign Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Case-Case %28Marketing%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Case-Case %28Marketing%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Case-Case %28Sales%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Case-Case %28Sales%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Case-Case %28Support%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Case-Case %28Support%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Case-Case Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Case-Case Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/CaseClose-Close Case Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/CaseClose-Close Case Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Contact-Contact %28Marketing%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Contact-Contact %28Marketing%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Contact-Contact %28Sales%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Contact-Contact %28Sales%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Contact-Contact %28Support%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Contact-Contact %28Support%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Contact-Contact Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Contact-Contact Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Global-Global Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Global-Global Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Lead-Lead %28Marketing%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Lead-Lead %28Marketing%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Lead-Lead %28Sales%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Lead-Lead %28Sales%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Lead-Lead %28Support%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Lead-Lead %28Support%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Lead-Lead Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Lead-Lead Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Opportunity-Opportunity %28Marketing%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Opportunity-Opportunity %28Marketing%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Opportunity-Opportunity %28Sales%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Opportunity-Opportunity %28Sales%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Opportunity-Opportunity %28Support%29 Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Opportunity-Opportunity %28Support%29 Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Opportunity-Opportunity Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Opportunity-Opportunity Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/Task-Task Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/Task-Task Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/UserProvAccount-User Provisioning Account Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/UserProvAccount-User Provisioning Account Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/UserProvisioningLog-User Provisioning Log Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/UserProvisioningLog-User Provisioning Log Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/layouts/UserProvisioningRequest-User Provisioning Request Layout.layout" afterPath="$PROJECT_DIR$/unpackaged/layouts/UserProvisioningRequest-User Provisioning Request Layout.layout" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/Account.object" afterPath="$PROJECT_DIR$/unpackaged/objects/Account.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/Campaign.object" afterPath="$PROJECT_DIR$/unpackaged/objects/Campaign.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/Case.object" afterPath="$PROJECT_DIR$/unpackaged/objects/Case.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/Contact.object" afterPath="$PROJECT_DIR$/unpackaged/objects/Contact.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/Idea.object" afterPath="$PROJECT_DIR$/unpackaged/objects/Idea.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/Opportunity.object" afterPath="$PROJECT_DIR$/unpackaged/objects/Opportunity.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/Order.object" afterPath="$PROJECT_DIR$/unpackaged/objects/Order.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/User.object" afterPath="$PROJECT_DIR$/unpackaged/objects/User.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/objects/UserProvisioningRequest.object" afterPath="$PROJECT_DIR$/unpackaged/objects/UserProvisioningRequest.object" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/workflows/Account.workflow" afterPath="$PROJECT_DIR$/unpackaged/workflows/Account.workflow" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/workflows/Case.workflow" afterPath="$PROJECT_DIR$/unpackaged/workflows/Case.workflow" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/workflows/Opportunity.workflow" afterPath="$PROJECT_DIR$/unpackaged/workflows/Opportunity.workflow" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/classes/CandidateFormControllerExtension.cls" afterPath="$PROJECT_DIR$/unpackaged/classes/CandidateFormControllerExtension.cls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/pages/CandidateCustomForm.page" afterPath="$PROJECT_DIR$/unpackaged/pages/CandidateCustomForm.page" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unpackaged/pages/CandidateCustomList.page" afterPath="$PROJECT_DIR$/unpackaged/pages/CandidateCustomList.page" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/unpackaged/classes/testPositionTrigger.cls" afterPath="$PROJECT_DIR$/unpackaged/classes/TestPositionTrigger.cls" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/unpackaged/staticresources/SLDSValidator_js.resource-meta.xml" afterPath="$PROJECT_DIR$/unpackaged/staticresources/SLDSValidatorresource-meta.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -195,85 +29,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="candidate_form_remoting_js.resource" pinned="false" current-in-tab="false">
+      <file leaf-file-name="candidate_form_remoting_js.resource" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unpackaged/staticresources/candidate_form_remoting_js.resource">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scratch_4.html" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="130">
+              <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
               <folding>
-                <element signature="n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#182#433#0" expanded="false" />
+                <element signature="e#2659#2701#0" expanded="false" />
+                <element signature="n#!!block;n#createAccount#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scratch_2.cls" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.cls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scratch_3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="53" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CandidateCustomForm.page" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CandidateCustomForm.page" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unpackaged/pages/CandidateCustomForm.page">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CandidateFormControllerExtension.cls" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unpackaged/classes/CandidateFormControllerExtension.cls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CandidateCustomList.page" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unpackaged/pages/CandidateCustomList.page">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="68" column="74" lean-forward="false" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
-              <folding />
+            <state relative-caret-position="286">
+              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#apex:page#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#apex:page#0;n#!!top" expanded="false" />
+                <element signature="n#legend#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#apex:page#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#apex:page#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -297,7 +77,6 @@
     <findStrings>
       <find>year</find>
       <find>Job_Application</find>
-      <find>city</find>
       <find>name</find>
       <find>abc</find>
       <find>!i</find>
@@ -305,7 +84,24 @@
       <find>!UrlFOr</find>
       <find>SLDS01</find>
       <find>generateUrlk</find>
+      <find>Zip</find>
+      <find>Years</find>
+      <find>Current</find>
+      <find>.Label</find>
+      <find>button</find>
+      <find>country</find>
+      <find>CURRENT</find>
+      <find>CURRENTLY</find>
+      <find>years+pf</find>
+      <find>city</find>
+      <find>years</find>
+      <find>div class=&quot;slds-form-element__control&quot; id =</find>
+      <find>zip</find>
+      <find>birthday</find>
     </findStrings>
+    <replaceStrings>
+      <replace>.Name</replace>
+    </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -345,15 +141,22 @@
         <option value="$PROJECT_DIR$/unpackaged/staticresources/candidateForm_remoting_js.resource.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.html" />
         <option value="$PROJECT_DIR$/unpackaged/classes/CandidateFormControllerExtension.cls" />
-        <option value="$PROJECT_DIR$/unpackaged/staticresources/candidate_form_remoting_js.resource" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/unpackaged/pages/CandidateCustomForm.page" />
+        <option value="$PROJECT_DIR$/unpackaged/staticresources/candidate_form_remoting_js.resource" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -399,7 +202,19 @@
               <item name="TrailHeadProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrailHeadProject" type="462c0819:PsiDirectoryNode" />
               <item name="unpackaged" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrailHeadProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrailHeadProject" type="462c0819:PsiDirectoryNode" />
+              <item name="unpackaged" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrailHeadProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrailHeadProject" type="462c0819:PsiDirectoryNode" />
+              <item name="unpackaged" type="462c0819:PsiDirectoryNode" />
+              <item name="tabs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -417,8 +232,10 @@
     <property name="UseStandardLocationKey" value="true" />
     <property name="SearchEverywhereHistoryKey" value="Candi&#9;FILE&#9;file://C:/Users/admin_1/IdeaProjects/recruitment_app/unpackaged/classes/CandidateWeatherController.cls&#10;OpenWeather&#9;FILE&#9;file://C:/Users/admin_1/IdeaProjects/recruitment_app/unpackaged/layouts/External_App_Setting__mdt-OpenWeather Setting Layout.layout&#10;EmailHelperUti&#9;FILE&#9;file://C:/Users/admin_1/IdeaProjects/recruitment_app/unpackaged/classes/EmailHelperUtil.cls" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="LastSelectedSalesforceComponentKey" value="ApexClass" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -539,12 +356,12 @@
       <workItem from="1506306127991" duration="12882000" />
       <workItem from="1506389364071" duration="23198000" />
       <workItem from="1506475526061" duration="36946000" />
-      <workItem from="1506666158153" duration="158000" />
+      <workItem from="1506666158153" duration="12130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73184000" />
+    <option name="totallyTimeSpent" value="85156000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,12 +382,12 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1800948" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17901234" sideWeight="0.50680786" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.49546143" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38956127" sideWeight="0.47013488" order="0" side_tool="false" content_ui="combo" />
@@ -581,7 +398,7 @@
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38350984" sideWeight="0.52986515" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17901234" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17901234" sideWeight="0.49319214" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -595,7 +412,7 @@
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1800948" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17901234" sideWeight="0.50680786" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -606,16 +423,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1800948" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17901234" sideWeight="0.49319214" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38350984" sideWeight="0.47013488" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.49546143" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38956127" sideWeight="0.47013488" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38350984" sideWeight="0.52986515" order="6" side_tool="true" content_ui="tabs" />
@@ -632,19 +449,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unpackaged/classes/candidateControllerExtension.cls" />
     <entry file="file://$PROJECT_DIR$/unpackaged/layouts/Candidate__c-My Candidate Layout.layout" />
     <entry file="file://$PROJECT_DIR$/unpackaged/pages/JobAppplicationForm.page" />
     <entry file="file://$PROJECT_DIR$/unpackaged/layouts/Candidate__c-My Candidate Layout.layout" />
     <entry file="file://$PROJECT_DIR$/unpackaged/layouts/Candidate__c-Candidate Layout.layout" />
-    <entry file="file://$PROJECT_DIR$/unpackaged/objects/Candidate__c.object" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -792,10 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unpackaged/staticresources/candidate_form_remoting_js.resource">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="26">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -811,19 +620,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/unpackaged/tabs/Candidate__c.tab">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unpackaged/objects/Candidate__c.object">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="97" column="37" lean-forward="false" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unpackaged/pages/CandidateCustomForm.page">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="286">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#apex:page#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#apex:page#0;n#!!top" expanded="false" />
+            <element signature="n#legend#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#apex:page#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#apex:page#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unpackaged/staticresources/candidate_form_remoting_js.resource">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+          <folding>
+            <element signature="e#182#433#0" expanded="false" />
+            <element signature="e#2659#2701#0" expanded="false" />
+            <element signature="n#!!block;n#createAccount#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
