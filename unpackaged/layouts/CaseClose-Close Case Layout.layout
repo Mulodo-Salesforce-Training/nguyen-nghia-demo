@@ -18,10 +18,6 @@
                 <behavior>Edit</behavior>
                 <field>Comments</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Days_Since_Last_Update__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>

@@ -7,7 +7,9 @@
     <navType>Standard</navType>
     <tab>standard-home</tab>
     <tab>standard-Chatter</tab>
+    <tab>standard-WaveHome</tab>
     <tab>standard-Opportunity</tab>
+    <tab>standard-Quote</tab>
     <tab>standard-Lead</tab>
     <tab>standard-Task</tab>
     <tab>standard-File</tab>
@@ -23,8 +25,10 @@
     <tab>standard-OtherUserProfile</tab>
     <tab>standard-Case</tab>
     <tab>standard-News</tab>
-    <tab>standard-ForecastingLightning</tab>
-    <tab>Property__c</tab>
-    <tab>Offer__c</tab>
+    <tab>standard-Forecasting3</tab>
+    <tab>standard-EinsteinAnalytics</tab>
+    <tab>Candidate__c</tab>
+    <tab>Position__c</tab>
+    <tab>Job_Application__c</tab>
     <uiType>Lightning</uiType>
 </CustomApplication>

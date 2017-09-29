@@ -111,20 +111,6 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
-        <fullName>Days_Since_Last_Update__c</fullName>
-        <externalId>false</externalId>
-        <formula>TODAY() - Account.LastActivityDate</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Days Since Last Update</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>

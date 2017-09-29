@@ -79,10 +79,6 @@
                 <behavior>Required</behavior>
                 <field>Type</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Days_Since_Last_Update__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -157,15 +157,6 @@
         <fullName>Type</fullName>
         <type>Picklist</type>
     </fields>
-    <fields>
-        <fullName>isdescription__c</fullName>
-        <description>isDescription auto check description</description>
-        <externalId>false</externalId>
-        <formula>Name != null</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>isdescription</label>
-        <type>Checkbox</type>
-    </fields>
     <listViews>
         <fullName>AllActiveCampaigns</fullName>
         <filterScope>Everything</filterScope>

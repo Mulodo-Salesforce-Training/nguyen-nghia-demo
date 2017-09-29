@@ -72,6 +72,8 @@
         <field fieldType="string" name="BillingState" type="string" />
         <field fieldType="string" name="BillingPostalCode" type="string" />
         <field fieldType="string" name="BillingCountry" type="string" />
+        <field fieldType="picklist" name="BillingStateCode" type="string" />
+        <field fieldType="picklist" name="BillingCountryCode" type="string" />
         <field fieldType="double" name="BillingLatitude" type="Decimal" />
         <field fieldType="double" name="BillingLongitude" type="Decimal" />
         <field fieldType="picklist" name="BillingGeocodeAccuracy" type="string" />
@@ -81,6 +83,8 @@
         <field fieldType="string" name="ShippingState" type="string" />
         <field fieldType="string" name="ShippingPostalCode" type="string" />
         <field fieldType="string" name="ShippingCountry" type="string" />
+        <field fieldType="picklist" name="ShippingStateCode" type="string" />
+        <field fieldType="picklist" name="ShippingCountryCode" type="string" />
         <field fieldType="double" name="ShippingLatitude" type="Decimal" />
         <field fieldType="double" name="ShippingLongitude" type="Decimal" />
         <field fieldType="picklist" name="ShippingGeocodeAccuracy" type="string" />
@@ -149,6 +153,8 @@
         <field fieldType="string" name="State" type="string" />
         <field fieldType="string" name="PostalCode" type="string" />
         <field fieldType="string" name="Country" type="string" />
+        <field fieldType="picklist" name="StateCode" type="string" />
+        <field fieldType="picklist" name="CountryCode" type="string" />
         <field fieldType="double" name="Latitude" type="Decimal" />
         <field fieldType="double" name="Longitude" type="Decimal" />
         <field fieldType="picklist" name="GeocodeAccuracy" type="string" />
@@ -2145,6 +2151,8 @@
         <field fieldType="string" name="OtherState" type="string" />
         <field fieldType="string" name="OtherPostalCode" type="string" />
         <field fieldType="string" name="OtherCountry" type="string" />
+        <field fieldType="picklist" name="OtherStateCode" type="string" />
+        <field fieldType="picklist" name="OtherCountryCode" type="string" />
         <field fieldType="double" name="OtherLatitude" type="Decimal" />
         <field fieldType="double" name="OtherLongitude" type="Decimal" />
         <field fieldType="picklist" name="OtherGeocodeAccuracy" type="string" />
@@ -2154,6 +2162,8 @@
         <field fieldType="string" name="MailingState" type="string" />
         <field fieldType="string" name="MailingPostalCode" type="string" />
         <field fieldType="string" name="MailingCountry" type="string" />
+        <field fieldType="picklist" name="MailingStateCode" type="string" />
+        <field fieldType="picklist" name="MailingCountryCode" type="string" />
         <field fieldType="double" name="MailingLatitude" type="Decimal" />
         <field fieldType="double" name="MailingLongitude" type="Decimal" />
         <field fieldType="picklist" name="MailingGeocodeAccuracy" type="string" />
@@ -2222,6 +2232,8 @@
         <field fieldType="string" name="State" type="string" />
         <field fieldType="string" name="PostalCode" type="string" />
         <field fieldType="string" name="Country" type="string" />
+        <field fieldType="picklist" name="StateCode" type="string" />
+        <field fieldType="picklist" name="CountryCode" type="string" />
         <field fieldType="double" name="Latitude" type="Decimal" />
         <field fieldType="double" name="Longitude" type="Decimal" />
         <field fieldType="picklist" name="GeocodeAccuracy" type="string" />
@@ -2750,6 +2762,8 @@
         <field fieldType="string" name="BillingState" type="string" />
         <field fieldType="string" name="BillingPostalCode" type="string" />
         <field fieldType="string" name="BillingCountry" type="string" />
+        <field fieldType="picklist" name="BillingStateCode" type="string" />
+        <field fieldType="picklist" name="BillingCountryCode" type="string" />
         <field fieldType="double" name="BillingLatitude" type="Decimal" />
         <field fieldType="double" name="BillingLongitude" type="Decimal" />
         <field fieldType="picklist" name="BillingGeocodeAccuracy" type="string" />
@@ -3037,6 +3051,8 @@
         <field fieldType="string" name="State" type="string" />
         <field fieldType="string" name="PostalCode" type="string" />
         <field fieldType="string" name="Country" type="string" />
+        <field fieldType="picklist" name="StateCode" type="string" />
+        <field fieldType="picklist" name="CountryCode" type="string" />
         <field fieldType="picklist" name="GeocodeAccuracyStandard" type="string" />
         <field fieldType="address" name="Address" type="address" />
         <field fieldType="phone" name="Phone" type="string" />
@@ -3058,6 +3074,8 @@
         <field fieldType="string" name="MailingState" type="string" />
         <field fieldType="string" name="MailingPostalCode" type="string" />
         <field fieldType="string" name="MailingCountry" type="string" />
+        <field fieldType="picklist" name="MailingStateCode" type="string" />
+        <field fieldType="picklist" name="MailingCountryCode" type="string" />
         <field fieldType="picklist" name="MailingGeocodeAccuracy" type="string" />
         <field fieldType="address" name="MailingAddress" type="address" />
         <field fieldType="string" name="Latitude" type="string" />
@@ -4880,6 +4898,8 @@
         <field fieldType="string" name="State" type="string" />
         <field fieldType="string" name="PostalCode" type="string" />
         <field fieldType="string" name="Country" type="string" />
+        <field fieldType="picklist" name="StateCode" type="string" />
+        <field fieldType="picklist" name="CountryCode" type="string" />
         <field fieldType="double" name="Latitude" type="Decimal" />
         <field fieldType="double" name="Longitude" type="Decimal" />
         <field fieldType="picklist" name="GeocodeAccuracy" type="string" />
@@ -4953,6 +4973,8 @@
         <field fieldType="string" name="State" type="string" />
         <field fieldType="string" name="PostalCode" type="string" />
         <field fieldType="string" name="Country" type="string" />
+        <field fieldType="picklist" name="StateCode" type="string" />
+        <field fieldType="picklist" name="CountryCode" type="string" />
         <field fieldType="double" name="Latitude" type="Decimal" />
         <field fieldType="double" name="Longitude" type="Decimal" />
         <field fieldType="picklist" name="GeocodeAccuracy" type="string" />
@@ -5867,6 +5889,8 @@
         <field fieldType="string" name="BillingState" type="string" />
         <field fieldType="string" name="BillingPostalCode" type="string" />
         <field fieldType="string" name="BillingCountry" type="string" />
+        <field fieldType="picklist" name="BillingStateCode" type="string" />
+        <field fieldType="picklist" name="BillingCountryCode" type="string" />
         <field fieldType="double" name="BillingLatitude" type="Decimal" />
         <field fieldType="double" name="BillingLongitude" type="Decimal" />
         <field fieldType="picklist" name="BillingGeocodeAccuracy" type="string" />
@@ -5876,6 +5900,8 @@
         <field fieldType="string" name="ShippingState" type="string" />
         <field fieldType="string" name="ShippingPostalCode" type="string" />
         <field fieldType="string" name="ShippingCountry" type="string" />
+        <field fieldType="picklist" name="ShippingStateCode" type="string" />
+        <field fieldType="picklist" name="ShippingCountryCode" type="string" />
         <field fieldType="double" name="ShippingLatitude" type="Decimal" />
         <field fieldType="double" name="ShippingLongitude" type="Decimal" />
         <field fieldType="picklist" name="ShippingGeocodeAccuracy" type="string" />
@@ -6097,6 +6123,8 @@
         <field fieldType="string" name="State" type="string" />
         <field fieldType="string" name="PostalCode" type="string" />
         <field fieldType="string" name="Country" type="string" />
+        <field fieldType="picklist" name="StateCode" type="string" />
+        <field fieldType="picklist" name="CountryCode" type="string" />
         <field fieldType="double" name="Latitude" type="Decimal" />
         <field fieldType="double" name="Longitude" type="Decimal" />
         <field fieldType="picklist" name="GeocodeAccuracy" type="string" />
@@ -7284,21 +7312,6 @@
           <relationship name="LastModifiedBy" soqlType="User" type="User" />
         </relationships>
       </sobject>
-      <sobject name="Project__Share" super="SObject">
-        <field fieldType="id" name="Id" required="true" type="ID" />
-        <field fieldType="reference" name="ParentId" required="true" type="ID" />
-        <field fieldType="reference" name="UserOrGroupId" required="true" type="ID" />
-        <field fieldType="picklist" name="AccessLevel" required="true" type="string" />
-        <field fieldType="picklist" name="RowCause" type="string" />
-        <field fieldType="datetime" name="LastModifiedDate" required="true" type="dateTime" />
-        <field fieldType="reference" name="LastModifiedById" required="true" type="ID" />
-        <field fieldType="boolean" name="IsDeleted" required="true" type="boolean" />
-        <relationships>
-          <relationship name="Parent" soqlType="Project__c" type="Project__c" />
-          <relationship name="UserOrGroup" soqlType="Name" type="Name" />
-          <relationship name="LastModifiedBy" soqlType="User" type="User" />
-        </relationships>
-      </sobject>
       <sobject name="Publisher" super="SObject">
         <childRelationships>
           <relationship name="InstalledEntityDefinitions" soqlType="EntityDefinition" type="List&lt;EntityDefinition&gt;" />
@@ -8389,6 +8402,8 @@
         <field fieldType="string" name="State" type="string" />
         <field fieldType="string" name="PostalCode" type="string" />
         <field fieldType="string" name="Country" type="string" />
+        <field fieldType="picklist" name="StateCode" type="string" />
+        <field fieldType="picklist" name="CountryCode" type="string" />
         <field fieldType="double" name="Latitude" type="Decimal" />
         <field fieldType="double" name="Longitude" type="Decimal" />
         <field fieldType="picklist" name="GeocodeAccuracy" type="string" />
@@ -9068,36 +9083,5 @@
         </relationships>
       </sobject>
     </sobject>
-    <installedPackageClasses>
-      <apexClass managed="true" name="PlaygroundInstaller" qualification="REQUIRED">
-        <method name="onInstall" returnType="void">
-          <parameter name="context" type="InstallContext" />
-          <modifier value="GLOBAL" />
-        </method>
-        <namespace>th_con_app</namespace>
-        <superInterfaces>
-          <TypeRef name="System.InstallHandler" />
-        </superInterfaces>
-        <modifier value="GLOBAL" />
-      </apexClass>
-      <apexClass managed="true" name="PlaygroundInstallerTests" qualification="REQUIRED">
-        <namespace>th_con_app</namespace>
-        <modifier value="PUBLIC" />
-        <modifier value="TEST_METHOD" />
-      </apexClass>
-      <apexClass managed="true" name="WelcomeFinder" qualification="REQUIRED">
-        <method name="getStartUrl" returnType="Map">
-          <modifier value="STATIC" />
-          <modifier value="GLOBAL" />
-        </method>
-        <namespace>th_con_app</namespace>
-        <modifier value="GLOBAL" />
-      </apexClass>
-      <apexClass managed="true" name="WelcomeFinderTests" qualification="REQUIRED">
-        <namespace>th_con_app</namespace>
-        <modifier value="PUBLIC" />
-        <modifier value="TEST_METHOD" />
-      </apexClass>
-    </installedPackageClasses>
   </component>
 </project>

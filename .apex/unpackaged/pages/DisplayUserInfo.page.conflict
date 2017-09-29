@@ -1,7 +1,0 @@
-<apex:page >
-    <apex:pageBlock title="User Information">
-        <apex:pageBlockSection >
-            {!$User.FirstName & ' ' & $User.LastName}
-        </apex:pageBlockSection>
-    </apex:pageBlock>
-</apex:page>

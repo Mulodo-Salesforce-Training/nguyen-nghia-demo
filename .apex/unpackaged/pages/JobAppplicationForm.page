@@ -1,0 +1,16 @@
+<apex:page standardController="Job_Application__c" showHeader="true" sidebar="true">
+    <apex:form >
+        <apex:pageBlock title="Custom Job Application Form">
+            <apex:sectionHeader title="Job Application Add" subtitle="New Job Application"/>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!Job_Application__c.Candidate__c}"/>
+                <apex:inputField value="{!Job_Application__c.Position__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{! Save}" value="Save"/>
+                <apex:commandButton action="{!Cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

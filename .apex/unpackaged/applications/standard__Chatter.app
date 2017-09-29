@@ -7,6 +7,7 @@
     <tab>standard-OtherUserProfile</tab>
     <tab>standard-CollaborationGroup</tab>
     <tab>standard-File</tab>
-    <tab>Property__c</tab>
-    <tab>Offer__c</tab>
+    <tab>Candidate__c</tab>
+    <tab>Position__c</tab>
+    <tab>Job_Application__c</tab>
 </CustomApplication>

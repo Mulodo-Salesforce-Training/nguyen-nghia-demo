@@ -101,16 +101,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Account_Number__c</fullName>
-        <externalId>false</externalId>
-        <formula>Account.AccountNumber</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Account Number</label>
-        <required>false</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>AssistantName</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -312,14 +302,4 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
-    <validationRules>
-        <fullName>Contact_must_be_in_Account_ZIP_Code</fullName>
-        <active>true</active>
-        <description>Contact must be in Account ZIP Code</description>
-        <errorConditionFormula>AND(
- NOT(ISBLANK( AccountId )),
- MailingPostalCode &lt;&gt;  Account.ShippingPostalCode
-)</errorConditionFormula>
-        <errorMessage>Contact must be in Account ZIP Code</errorMessage>
-    </validationRules>
 </CustomObject>

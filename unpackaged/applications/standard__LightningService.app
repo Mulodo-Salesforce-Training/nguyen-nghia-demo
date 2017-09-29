@@ -11,8 +11,9 @@
     <tab>standard-Dashboard</tab>
     <tab>standard-Chatter</tab>
     <tab>standard-home</tab>
-    <tab>Property__c</tab>
-    <tab>Offer__c</tab>
+    <tab>Candidate__c</tab>
+    <tab>Position__c</tab>
+    <tab>Job_Application__c</tab>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
 </CustomApplication>

@@ -7,6 +7,7 @@
     <tab>standard-ContentSearch</tab>
     <tab>standard-ContentSubscriptions</tab>
     <tab>standard-ContentFavorites</tab>
-    <tab>Property__c</tab>
-    <tab>Offer__c</tab>
+    <tab>Candidate__c</tab>
+    <tab>Position__c</tab>
+    <tab>Job_Application__c</tab>
 </CustomApplication>

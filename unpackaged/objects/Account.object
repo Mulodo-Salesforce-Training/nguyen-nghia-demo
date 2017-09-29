@@ -166,14 +166,6 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
-        <fullName>Match_Billing_Address__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Match Billing Address</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>NaicsCode</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -218,16 +210,6 @@
     <fields>
         <fullName>Phone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Potential_Value__c</fullName>
-        <description>Demo Potential Value Roll up from Opportunity</description>
-        <externalId>false</externalId>
-        <label>Potential Value</label>
-        <summarizedField>Opportunity.ExpectedRevenue</summarizedField>
-        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <type>Summary</type>
     </fields>
     <fields>
         <fullName>Rating</fullName>

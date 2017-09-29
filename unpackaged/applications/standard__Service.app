@@ -9,6 +9,7 @@
     <tab>standard-Solution</tab>
     <tab>standard-report</tab>
     <tab>standard-Dashboard</tab>
-    <tab>Property__c</tab>
-    <tab>Offer__c</tab>
+    <tab>Candidate__c</tab>
+    <tab>Position__c</tab>
+    <tab>Job_Application__c</tab>
 </CustomApplication>
