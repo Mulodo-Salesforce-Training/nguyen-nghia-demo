@@ -23,37 +23,62 @@
                     <div class="slds-col slds-size--1-of-1 slds-m-vertical--small">
                         <h2 class="slds-text-heading--medium">Create Candidates</h2>
                     </div>
+                    <!--MESSAGE ERROR SECTION-->
                     <div class="slds-col slds-size--1-of-1" id="messagewrapper">
                     </div>
-                    <div class="slds-col slds-size--1-of-1">
+                    <!--FORM SECTION-->
+                    <!--INFORMATION BEGIN-->
+                    <!--FIRSTNAME-->
+                    <div class="slds-form-element slds-has-error">
+                        <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.First_Name__c.Label}">
+                                {!$ObjectType.Candidate__c.fields.First_Name__c.Label}
+                        </label>
 
-                        <div class="slds-form-element">
-                            <label class="slds-form-element__label slds-m-top--small" for="Name">
-                                    {!$ObjectType.Account.fields.Name.label}
-                            </label>
-                            <div class="slds-form-element__control">
-                                <input id="Name" class="slds-input" type="text"
-                                       html-placeholder="Name"
-                                       data-required="true"
-                                       data-fieldName="Name"/>
-                            </div>
+                        <div class="slds-form-element__control">
+                            <input type="text"
+                                   id="{!$ObjectType.Candidate__c.fields.First_Name__c.Label}"
+                                   class="slds-input"
+                                   placeholder="Placeholder Text" />
                         </div>
-
-                        <div class="slds-form-element">
-                            <label class="slds-form-element__label slds-m-top--small" for="fax">
-                                    {!$ObjectType.Account.fields.Fax.label}
-                            </label>
-                            <div class="slds-form-element__control">
-                                <input id="fax"  class="slds-input"
-                                       type="text"
-                                       html-placeholder="Fax"
-                                       data-required="true"
-                                       data-fieldName="Fax"/>
-                            </div>
-                        </div>
-
-
                     </div>
+
+                    <!--OWNER-->
+                    <!--LASTNAME-->
+                    <div class="slds-form-element slds-has-error">
+                        <label class="slds-form-element__label" for="input-unique-id">Form Element Label</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-unique-id" class="slds-input" placeholder="Placeholder Text" />
+                        </div>
+                    </div>
+                    <!--PHONE-->
+                    <!--BIRTHDAY-->
+                    <!--EMAIL-->
+                    <!--INFORMATION END-->
+                    <!--AVATAR BEGIN-->
+                    <!--PHOTO-->
+                    <!--AVATAR END-->
+                    <!--ADDRESS BEGIN-->
+                    <!--STREET-->
+                    <!--STATE/PROVINCE-->
+                    <!--CITY-->
+                    <!--ZIP/POSTALCODE-->
+                    <!--BLANK-->
+                    <!--COUNTRY-->
+                    <!--ADDRESS END-->
+                    <!--EMPLOYMENT BEGIN-->
+                    <!--CURRENTLYEMPLOYED--> <!--DEFAULT TRUE-->
+                    <!--YEARS OF EXPERIENCE-->
+                    <!--CURRENT COMPANY-->
+                    <!--EMPLOYEMENT END-->
+                    <!--ADDITIONAL DETAIL BEGIN-->
+                    <!--BLANK-->
+                    <!--EDUCATION-->
+                    <!--ADDITIONAL DETAIL END-->
+                    <!--BUTTON-->
+                    <!--SAVE-->
+                    <!--SAVE AND NEW-->
+                    <!--CANCEL-->
+
                 </div>
             </div>
             <!--REMOTING JS WITH STATIC RESOURCE-->

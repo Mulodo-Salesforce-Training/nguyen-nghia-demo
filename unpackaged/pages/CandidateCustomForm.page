@@ -33,10 +33,15 @@
                         <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.First_Name__c.Label}">
                                 {!$ObjectType.Candidate__c.fields.First_Name__c.Label}
                         </label>
+
                         <div class="slds-form-element__control">
-                            <input type="text" id="{!$ObjectType.Candidate__c.fields.First_Name__c.Label}" class="slds-input" placeholder="Placeholder Text" />
+                            <input type="text"
+                                   id="{!$ObjectType.Candidate__c.fields.First_Name__c.Label}"
+                                   class="slds-input"
+                                   placeholder="Placeholder Text" />
                         </div>
                     </div>
+
                     <!--OWNER-->
                     <!--LASTNAME-->
                     <div class="slds-form-element slds-has-error">
