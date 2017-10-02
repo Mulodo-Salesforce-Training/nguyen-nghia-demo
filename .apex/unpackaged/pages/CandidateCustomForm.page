@@ -13,8 +13,8 @@
             <apex:includeScript value="{!URLFOR($Resource.jQuery_js)}" />
             <apex:includeScript value="{!URLFOR($Resource.SLDSValidator_js)}" />
             <!--JAVASCRIPT REMOTING OBJECT-->
-            <apex:remoteObjects>
-                <apex:remoteObjectModel name="Candidate__c" jsShortHand = "Candidate" fields="First_Name__c, Last_Name__c, Phone__c, Email__c"/>
+            <apex:remoteObjects >
+                <apex:remoteObjectModel name="Candidate__c" jsShortHand="Candidate" fields="First_Name__c,Last_Name__c,Phone__c,Email__c"/>
             </apex:remoteObjects>
 
         </head>
@@ -22,9 +22,9 @@
             <div class="slds-scope">
                 <div class="slds-grid slds-wrap">
                     <!--Action Buttons -->
-                    <div class="slds-col slds-size--1-of-1">
-                        <a href="#" class="slds-button slds-button--neutral slds-float--right" id="callbtn" onclick="createAccount();">Save</a>
-                    </div>
+                    <!--<div class="slds-col slds-size&#45;&#45;1-of-1">-->
+                        <!--<a href="#" class="slds-button slds-button&#45;&#45;neutral slds-float&#45;&#45;right" id="callbtn" onclick="createAccount();">Save</a>-->
+                    <!--</div>-->
                     <div class="slds-col slds-size--1-of-1 slds-m-vertical--small">
                         <h2 class="slds-text-heading--medium">Create Candidates</h2>
                     </div>
