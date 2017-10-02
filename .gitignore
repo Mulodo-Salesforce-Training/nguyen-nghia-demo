@@ -6,6 +6,7 @@
 recruitment_app.iml
 src/package.xml
 .sdk/
+# Salesforce unnecessary git
 src/applications
 src/labels
 src/layouts
