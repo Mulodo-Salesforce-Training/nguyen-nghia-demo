@@ -6,7 +6,7 @@
 >
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
     <head >
-        <!--<apex:includeScript value="{!URLFOR($Resource.AngularMinJS)}"/>-->
+        <apex:includeScript value="{!URLFOR($Resource.AngularMinJS)}"/>
         <!--LIGHTNING DESIGN SYSTEM-->
         <apex:slds />
     </head>

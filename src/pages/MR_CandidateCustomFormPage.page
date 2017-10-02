@@ -9,13 +9,16 @@
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
         <head>
             <!--STYLESHEET FROM LIGHTNING DESIGN SYSTEM-->
-            <apex:slds />
-            <apex:includeScript value="{!URLFOR($Resource.jQuery_js)}" />
+            <apex:stylesheet value="{! URLFOR($Asset.SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css') }" />
+            <apex:includeScript value="{!URLFOR($Resource.JQueryJS)}" />
             <apex:includeScript value="{!URLFOR($Resource.SLDSValidatorJS)}" />
             <!--JAVASCRIPT REMOTING OBJECT-->
             <apex:remoteObjects >
                 <apex:remoteObjectModel name="Candidate__c" jsShortHand="Candidate" fields="First_Name__c,Last_Name__c,Phone__c,Email__c"/>
             </apex:remoteObjects>
+            <!--appiPhony ui library-->
+            <apex:includeScript value="{!URLFOR($Resource.MomentJS)}"/>
+            <apex:includeScript value="{!URLFOR($Resource.aljs, '/jquery.aljs-all.min.js')}"/>
 
         </head>
         <body>
@@ -28,9 +31,7 @@
                     <div class="slds-col slds-size--1-of-1 slds-m-vertical--small">
                         <h2 class="slds-text-heading--medium">Create Candidates</h2>
                     </div>
-                    <!--MESSAGE ERROR SECTION-->
-                    <div class="slds-col slds-size--1-of-1" id="messagewrapper">
-                    </div>
+
                     <!--FORM SECTION-->
                     <form class="slds-form slds-form__horizontal slds-size--2-of-2"
                           id="candidate-custom-form">
@@ -39,6 +40,53 @@
                                 <legend id="candidate-info" class="slds-text-heading--medium slds-p-vertical--medium">
                                     New Candidate
                                 </legend>
+                                <!--MESSAGE ERROR SECTION-->
+                                <div class="slds-col slds-size--1-of-1 slds-hide" id="error-message-wrapper" name="error-message-wrapper">
+                                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                                        <span class="slds-assistive-text">error</span>
+                                        <span class="slds-icon_container slds-icon-utility-ban slds-m-right_x-small" title="Description of icon when needed">
+                                            <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#ban" />
+                                            </svg>
+                                        </span>
+                                        <h2 id="error-message-info">
+                                            <!--// MESSAGE ERROR APPEND HERE-->
+                                        </h2>
+                                        <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" type="button"
+                                                onClick="removeValidateMessage()"
+                                                title="Close">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#close")}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">Close</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--SUCCESS MESSAGE SECTION-->
+                                <div class="slds-hide" style="height: 4rem;" id="success-message-wrapper" name="success-message-wrapper">
+                                    <div class="slds-notify_container slds-is-relative">
+                                        <div class="slds-notify slds-notify_toast slds-theme_success" role="alert">
+                                            <span class="slds-assistive-text">success</span>
+                                            <span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                                                <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#success')}" />
+                                                </svg>
+                                            </span>
+                                            <div class="slds-notify__content">
+                                                <h2 class="slds-text-heading_small" id="success-message-info">
+                                                    <!--SUCCESS MESSAGE INFO HERE-->
+                                                </h2>
+                                            </div>
+                                            <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close">
+                                                <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close" />
+                                                </svg>
+                                                <span class="slds-assistive-text">Close</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!--INFORMATION BEGIN-->
                                 <div class="slds-section__title slds-theme--shade">
                                     <div class="slds-text-heading_medium">
@@ -51,25 +99,29 @@
                                         <!--FIRSTNAME-->
                                         <div class="slds-form-element ">
                                             <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.First_Name__c.Name}">
+                                                    <abbr class="slds-required" title="required">*</abbr>
                                                     {!$ObjectType.Candidate__c.fields.First_Name__c.Label}
                                             </label>
 
                                             <div class="slds-form-element__control">
                                                 <input type="text"
                                                        id="{!$ObjectType.Candidate__c.fields.First_Name__c.Name}"
-                                                       class="slds-input" />
+
+                                                       class="slds-input" required = "true"/>
                                             </div>
                                         </div>
 
                                         <!--PHONE-->
                                         <div class="slds-form-element">
                                             <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.Phone__c.Name}">
+                                                    <abbr title="Required" class="slds-required">*</abbr>
                                                     {!$ObjectType.Candidate__c.fields.Phone__c.Label}
                                             </label>
 
                                             <div class="slds-form-element__control">
-                                                <input type="number"
+                                                <input type="tel"
                                                        id="{!$ObjectType.Candidate__c.fields.Phone__c.Name}"
+                                                       required="true"
                                                        class="slds-input"/>
                                             </div>
                                         </div>
@@ -78,10 +130,18 @@
                                             <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.Birthday__c.Name}">
                                                     {!$ObjectType.Candidate__c.fields.Birthday__c.Label}
                                             </label>
-
-                                            <div class="slds-form-element__control">
-                                                <input type="date"
+                                            <!--NEED TO HAS SLDS-INPUT-HAS-ICON TO FIX STYLE-->
+                                            <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+                                                <!--<input type="date"-->
+                                                       <!--id="{!$ObjectType.Candidate__c.fields.Birthday__c.Name}"-->
+                                                       <!--class="slds-input"/>-->
+                                                <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#event")}"></use>
+                                                </svg>
+                                                <input type="text"
                                                        id="{!$ObjectType.Candidate__c.fields.Birthday__c.Name}"
+                                                       readonly="true"
                                                        class="slds-input"/>
                                             </div>
                                         </div>
@@ -90,22 +150,26 @@
                                         <!--LAST NAME-->
                                         <div class="slds-form-element">
                                             <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.Last_Name__c.Name}">
+                                                    <abbr class="slds-required" title="Required">*</abbr>
                                                     {!$ObjectType.Candidate__c.fields.Last_Name__c.Label}
                                             </label>
 
                                             <div class="slds-form-element__control">
                                                 <input class="slds-input" type="text"
+                                                       required="true"
                                                        id="{!$ObjectType.Candidate__c.fields.Last_Name__c.Name}"/>
                                             </div>
                                         </div>
                                         <!--EMAIL-->
                                         <div class="slds-form-element">
                                             <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.Email__c.Name}">
+                                                    <abbr class="slds-required" title="Required">*</abbr>
                                                     {!$ObjectType.Candidate__c.fields.Email__c.Label}
                                             </label>
 
                                             <div class="slds-form-element__control">
                                                 <input class="slds-input" type="email"
+                                                       required="true"
                                                        id="{!$ObjectType.Candidate__c.fields.Email__c.Name}"/>
                                             </div>
                                         </div>
@@ -209,14 +273,52 @@
                                             </div>
                                         </div>
                                         <!--COUNTRY-->
-                                        <div class="slds-form-element">
-                                            <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.Country__c.Name}">
-                                                    {!$ObjectType.Candidate__c.fields.Country__c.Label}
-                                            </label>
+                                        <div class="slds-picklist slds-dropdown-trigger slds-dropdown-trigger--click" data-aljs="picklist">
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label"
+                                                       for="{!$ObjectType.Candidate__c.fields.Country__c.Name}">
+                                                        {!$ObjectType.Candidate__c.fields.Country__c.Label}
+                                                </label>
+                                                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right slds-picklist__input">
+                                                    <input type="search"
+                                                           id="{!$ObjectType.Candidate__c.fields.Country__c.Name}"
+                                                           class="slds-lookup__search-input slds-input"
+                                                           placeholder="Select an Option"
+                                                           aria-owns="option-list-01" role="combobox"
+                                                           aria-activedescendant="" aria-expanded="false" readonly="true"/>
 
-                                            <div class="slds-form-element__control">
-                                                <input class="slds-input" type="text"
-                                                       id="{!$ObjectType.Candidate__c.fields.Country__c.Name}"/>
+                                                    <button class="slds-button slds-input__icon slds-text-color--default"
+                                                            aria-expanded="false" tabindex="-1" title="settings">
+                                                        <svg class="slds-button__icon slds-button__icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                 xlink:href="{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#down")}"></use>
+                                                        </svg>
+
+                                                        <span class="slds-assistive-text">Expand countries options</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="slds-dropdown slds-dropdown--left" role="listbox">
+                                                <ul id="country-list-input" class="slds-dropdown__list slds-dropdown--length-5" role="presentation">
+                                                    <apex:variable  var="i" value="{!0}"/>
+                                                    <!--ITERATE THROUGH COUNTRYPICKLIST-->
+                                                    <apex:repeat value="{!CountryPickList}" var="country">
+                                                        <apex:variable value="{!i + 1 }" var="i"/>
+                                                        <li role="presentation">
+                                                        <span class="slds-lookup__item-action slds-lookup__item-action--label"
+                                                              role="option"
+                                                              tabindex="0"
+                                                              id="country-option-{!i}">
+                                                            <svg class="slds-icon slds-icon--selected slds-icon--x-small slds-icon-text-default slds-m-right--x-small slds-shrink-none" aria-hidden="true">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#check")}"></use>
+                                                            </svg>
+                                                            <span class="slds-truncate">{!Country.label}</span>
+                                                        </span>
+                                                        </li>
+                                                    </apex:repeat>
+
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -293,15 +395,52 @@
                                     <div class="slds-p-horizontal_meidum slds-size--1-of-2">&nbsp;</div>
                                     <div class="slds-p-horizontal_medium slds-size--1-of-2">
                                         <!--EDUCATION-->
-                                        <div class="slds-form-element ">
-                                            <label class="slds-form-element__label" for="{!$ObjectType.Candidate__c.fields.Education__c.Name}">
-                                                    {!$ObjectType.Candidate__c.fields.Education__c.Label}
-                                            </label>
+                                        <div class="slds-picklist slds-dropdown-trigger slds-dropdown-trigger--click" data-aljs="picklist">
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label"
+                                                       for="{!$ObjectType.Candidate__c.fields.Education__c.Name}">
+                                                        {!$ObjectType.Candidate__c.fields.Education__c.Label}
+                                                </label>
+                                                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right slds-picklist__input">
+                                                    <input type="search"
+                                                           id="{!$ObjectType.Candidate__c.fields.Education__c.Name}"
+                                                           class="slds-lookup__search-input slds-input"
+                                                           placeholder="Select an Option"
+                                                           aria-owns="option-list-01" role="combobox"
+                                                           aria-activedescendant="" aria-expanded="false" readonly="true"/>
 
-                                            <div class="slds-form-element__control">
-                                                <input type="text"
-                                                       id="{!$ObjectType.Candidate__c.fields.Education__c.Name}"
-                                                       class="slds-input" />
+                                                    <button class="slds-button slds-input__icon slds-text-color--default"
+                                                            aria-expanded="false" tabindex="-1" title="settings">
+                                                        <svg class="slds-button__icon slds-button__icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                 xlink:href="{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#down")}"></use>
+                                                        </svg>
+
+                                                        <span class="slds-assistive-text">Expand educations options</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="slds-dropdown slds-dropdown--left" role="listbox">
+                                                <ul id="country-list-input" class="slds-dropdown__list slds-dropdown--length-5" role="presentation">
+                                                    <apex:variable  var="eduIndex" value="{!0}"/>
+                                                    <!--ITERATE THROUGH educationList-->
+                                                    <apex:repeat value="{!EducationPickList}" var="education">
+                                                        <apex:variable value="{!eduIndex + 1 }" var="eduIndex"/>
+                                                        <li role="presentation">
+                                                        <span class="slds-lookup__item-action slds-lookup__item-action--label"
+                                                              role="option"
+                                                              tabindex="0"
+                                                              id="country-option-{!i}">
+                                                            <svg class="slds-icon slds-icon--selected slds-icon--x-small slds-icon-text-default slds-m-right--x-small slds-shrink-none" aria-hidden="true">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#check")}"></use>
+                                                            </svg>
+                                                            <span class="slds-truncate">{!education.label}</span>
+                                                        </span>
+                                                        </li>
+                                                    </apex:repeat>
+
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -313,9 +452,24 @@
                                 <!--SAVE AND NEW-->
                                 <!--CANCEL-->
                                 <!--BUTTON SUBMIT-->
-                                <button class="slds-button slds-button--brand slds-m-top--medium" type="submit">
-                                    Save
-                                </button>
+                                <div class="slds-align_absolute-center">
+                                    <button class="slds-button slds-button--brand slds-m-top--medium" type="submit">
+                                        Save
+                                    </button>
+                                    <!--<apex:commandButton styleClass="slds-button slds-button_neutral slds-m-top&#45;&#45;medium"-->
+                                                        <!--value="Cancel"-->
+                                                        <!--action="{!URLFOR($Page.MR_CandidateCustomListPage)}"/>-->
+                                    <apex:form>
+                                        <button class="slds-button slds-button_neutral slds-m-top--medium"
+                                                type="button"
+                                                onclick="redirectTo('{!URLFOR($Page.MR_CandidateCustomListPage)}')"
+                                                id="candidate-cancel-btn" >
+                                            Cancel
+                                        </button>
+                                    </apex:form>
+
+                                </div>
+
                             </fieldset>
                         <!-- / BOX AREA-->
                     </form>
