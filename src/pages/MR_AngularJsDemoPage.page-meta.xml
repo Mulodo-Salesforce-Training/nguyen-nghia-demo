@@ -3,7 +3,7 @@
     <apiVersion>40.0</apiVersion>
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
-    <label>PickList_ng_component</label>
+    <label>MR_AngularJsDemoPage</label>
     <packageVersions>
         <majorNumber>1</majorNumber>
         <minorNumber>7</minorNumber>

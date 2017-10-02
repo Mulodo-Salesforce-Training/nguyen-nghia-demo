@@ -1,4 +1,4 @@
-<apex:page controller="CandidateWeatherController">
+<apex:page controller="MR_CandidateWeatherCC">
     <apex:pageBlock title="Weather Information">
         <apex:sectionHeader title="{!CurrentWeather.Name}" subtitle="{!CurrentWeather.sys.country}"/>
         <apex:pageBlockSection >

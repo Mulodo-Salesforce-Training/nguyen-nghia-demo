@@ -1,4 +1,4 @@
-<aura:component implements="force:appHostable" controller="candidateTestAngular">
+<aura:component implements="force:appHostable" controller="MR_CandidateAngularCC">
     <!-- Handle component initialization in a client-side controller -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 

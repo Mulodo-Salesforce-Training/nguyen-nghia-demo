@@ -3,7 +3,7 @@
     <apiVersion>40.0</apiVersion>
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
-    <label>JobAppplicationForm</label>
+    <label>MR_PickListAngularComponentPage</label>
     <packageVersions>
         <majorNumber>1</majorNumber>
         <minorNumber>7</minorNumber>

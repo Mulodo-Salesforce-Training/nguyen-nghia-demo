@@ -1,6 +1,6 @@
 <apex:page tabStyle="Candidate_Custom__tab"
            standardController="Candidate__c"
-           extensions="candidateControllerExtension"
+           extensions="MR_CandidateCE"
            recordSetVar="candidates"
            showHeader="true"
            standardStylesheets="true"
@@ -59,7 +59,7 @@
                                     </th>
                                     <!--NAME-->
                                     <th scope="col">
-                                        <div class="slds-truncate" title="{!$ObjectType.57Candidate__c.fields.Name.Label}">
+                                        <div class="slds-truncate" title="{!$ObjectType.Candidate__c.fields.Name.Label}">
                                                 {!$ObjectType.Candidate__c.fields.Name.Label}
                                         </div>
                                     </th>

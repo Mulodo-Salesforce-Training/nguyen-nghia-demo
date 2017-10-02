@@ -1,9 +1,9 @@
 /**
  * Created by admin_1 on 28/09/2017.
  */
-public class CandidateFormControllerExtension {
+public class MR_CandidateFormCE {
 
-	public CandidateFormControllerExtension(ApexPages.StandardController controller) {
+	public MR_CandidateFormCE(ApexPages.StandardController controller) {
 	}
 
 	@RemoteAction

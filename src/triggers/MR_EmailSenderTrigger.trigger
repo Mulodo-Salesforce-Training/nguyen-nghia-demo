@@ -1,4 +1,4 @@
-trigger EmailSender on Job_Application__c (after update, after insert) {
+trigger MR_EmailSenderTrigger on Job_Application__c (after update, after insert) {
 	// list of candidates will be sent
 	List<Candidate__c> sentIMList = new List<Candidate__c>();
 	// store id to get candidate list using SOQL query
@@ -41,9 +41,9 @@ trigger EmailSender on Job_Application__c (after update, after insert) {
 		for(Candidate__c can: sentIMList) {
 			// debug candidate
 			System.debug(can.Email__c);
-			string template =CandidateEmailTemplateHelper.GetEmailTemplate(can.First_Name__c);
+			string template = MR_CandidateEmailTemplateUtil.GetEmailTemplate(can.First_Name__c);
 			if (can.Email__c != null) {
-				EmailHelperUtil.sendMail(can.Email__c,
+				MR_EmailHelperUtil.sendMail(can.Email__c,
 						'Candidate Confirmation' ,
 						template) ;
 			}

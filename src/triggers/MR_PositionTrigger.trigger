@@ -1,4 +1,4 @@
-trigger PositionTrigger on Position__c(before insert) {
+trigger MR_PositionTrigger on Position__c(before insert) {
 	private static final String ERR_TEMPLATE = 'Conflict! Position: {0} has already existed.';
 	List<String> newNameList = new List<String>();
 	List<Position__c> conflictPosList;

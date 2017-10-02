@@ -4,9 +4,9 @@
 /**	Description: A controller to send data in JSON type to Angular controller
 	@ControllerExtension
 */
-public with sharing class candidateTestAngular {
+public with sharing class MR_CandidateAngularCC {
 	// procedure constructor
-	public candidateTestAngular(ApexPages.StandardController controller) {
+	public MR_CandidateAngularCC(ApexPages.StandardController controller) {
 
 	}
 	@RemoteAction

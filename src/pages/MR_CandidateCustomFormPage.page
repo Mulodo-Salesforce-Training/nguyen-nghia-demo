@@ -1,5 +1,5 @@
 <apex:page standardController="Candidate__c"
-        extensions="CandidateFormControllerExtension"
+        extensions="MR_CandidateFormCE"
         showHeader="false"
         sidebar="false"
         standardStylesheets="false"
@@ -11,7 +11,7 @@
             <!--STYLESHEET FROM LIGHTNING DESIGN SYSTEM-->
             <apex:slds />
             <apex:includeScript value="{!URLFOR($Resource.jQuery_js)}" />
-            <apex:includeScript value="{!URLFOR($Resource.SLDSValidator_js)}" />
+            <apex:includeScript value="{!URLFOR($Resource.SLDSValidatorJS)}" />
             <!--JAVASCRIPT REMOTING OBJECT-->
             <apex:remoteObjects >
                 <apex:remoteObjectModel name="Candidate__c" jsShortHand="Candidate" fields="First_Name__c,Last_Name__c,Phone__c,Email__c"/>
@@ -323,7 +323,7 @@
                 </div>
             </div>
             <!--REMOTING JS WITH STATIC RESOURCE-->
-            <apex:includeScript value="{!URLFOR($Resource.candidate_form_remoting_js)}"/>
+            <apex:includeScript value="{!URLFOR($Resource.MRCandidateFormRemotingJS)}"/>
         </body>
     </html>
 

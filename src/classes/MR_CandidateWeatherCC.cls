@@ -1,16 +1,16 @@
 /**
  * Created by admin_1 on 26/09/2017.
  */
-public class CandidateWeatherController {
+public class MR_CandidateWeatherCC {
 	//	appIdIsRequired by api.openweathermap
 	private String apiKey; // will retrieve from metadata
 	private String cityName = 'Saigon,vietnam'; // default city if not declare
 	// endpoint format
 	private String UrlFormat = 'http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}';// 0: cityName, 1: apiKey
-	public WeatherViewModel CurrentWeather { get;set; }
+	public MR_WeatherViewModel CurrentWeather { get;set; }
 
 	// constructor
-	public CandidateWeatherController() {
+	public MR_CandidateWeatherCC() {
 		Id id = ApexPages.currentPage().getParameters().get('id'); // get id by ApexPages.currentPage() context
 		cityName = GetCityByCandidateId(id) != null ? GetCityByCandidateId(id) : cityName; //ternary operator
 		try {
@@ -25,7 +25,7 @@ public class CandidateWeatherController {
 		CurrentWeather = getWeather();
 	}
 
-	public WeatherViewModel getWeather() {
+	public MR_WeatherViewModel getWeather() {
 		String requestUrl = String.format(UrlFormat, new String[] {cityName, apiKey});
 		Http h = new Http();
 // Instantiate a new HTTP request, specify the method (GET) as well as the endpoint
@@ -33,12 +33,12 @@ public class CandidateWeatherController {
 		req.setEndpoint(requestUrl);
 		req.setMethod('GET');
 		HttpResponse res = h.send(req);
-		WeatherViewModel resWeather = parseToWeatherVM(res.getBody());
+		MR_WeatherViewModel resWeather = parseToWeatherVM(res.getBody());
 		return resWeather;
 	}
 
-	public static WeatherViewModel parseToWeatherVM(String json){
-		return (WeatherViewModel) System.JSON.deserialize(json, WeatherViewModel.class);
+	public static MR_WeatherViewModel parseToWeatherVM(String json){
+		return (MR_WeatherViewModel) System.JSON.deserialize(json, MR_WeatherViewModel.class);
 	}
 
 	public static String GetCityByCandidateId(Id id) {
