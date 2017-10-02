@@ -1,2 +1,6 @@
 # Folder of IDE
 .idea/
+# Project FFile ignore
+recruitment_app.iml
+unpackaged/package.xml
+.sdk/
