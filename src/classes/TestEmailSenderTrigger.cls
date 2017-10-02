@@ -22,6 +22,7 @@ private class TestEmailSenderTrigger {
 		Job_Application__c existApp = new Job_Application__c(Candidate__c = testCan.Id, Position__c = testPos.Id, Status__c ='Schedule Interviews');
 		insert existApp;
 		Test.stopTest();
+		/**@TODO Add System Assert Here*/
 	}
 
 	@isTest static void TestOnUpdate() {

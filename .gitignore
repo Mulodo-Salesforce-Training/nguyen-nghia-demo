@@ -1,6 +1,8 @@
 # Folder of IDE
 .idea/
+# Folder of .apex
+.apex/
 # Project FFile ignore
 recruitment_app.iml
-unpackaged/package.xml
+src/package.xml
 .sdk/
