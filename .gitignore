@@ -6,3 +6,9 @@
 recruitment_app.iml
 src/package.xml
 .sdk/
+src/applications
+src/labels
+src/layouts
+src/objects
+src/tabs
+src/workflows
