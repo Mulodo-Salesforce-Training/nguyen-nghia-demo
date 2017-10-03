@@ -5,7 +5,12 @@
 private class MR_EmailSenderTriggerTest {
 	@testSetup static void dataFactory() {
 		// data factory
-		Candidate__c testCan = new Candidate__c(First_Name__c = 'Nghia', Last_Name__c ='Nguyen', Phone__c = '01212132815', Email__c = 'nguyen.nghia@mulodo.com');
+		Candidate__c testCan = new Candidate__c(
+				First_Name__c = 'Nghia',
+				Last_Name__c ='Nguyen',
+				Phone__c = '01212132815',
+				Email__c = 'nguyen.nghia@mulodo.com'
+		);
 		insert testCan;
 		Position__c testPos = new Position__c(Name='C# Test Pos');
 		insert testPos;

@@ -1,48 +1,49 @@
-<aura:component implements="force:appHostable" controller="MR_CandidateAngularCC">
-    <!-- Handle component initialization in a client-side controller -->
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<aura:component>
+<!--<aura:component implements="force:appHostable" controller="MR_CandidateAngularCC">-->
+    <!--&lt;!&ndash; Handle component initialization in a client-side controller &ndash;&gt;-->
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
 
-    <!-- Dynamically load the list of contacts -->
-    <aura:attribute name="candidates" type="Candidate__c[]"/>
-    <aura:attribute name="candidateList" type="Candidate__c[]"/>
-    <aura:attribute name="totalCandidates" type="Integer"/>
+    <!--&lt;!&ndash; Dynamically load the list of contacts &ndash;&gt;-->
+    <!--<aura:attribute name="candidates" type="Candidate__c[]"/>-->
+    <!--<aura:attribute name="candidateList" type="Candidate__c[]"/>-->
+    <!--<aura:attribute name="totalCandidates" type="Integer"/>-->
 
-    <!-- Page header with a counter that displays total number of contacts -->
-    <div class="slds-page-header slds-page-header--object-home">
-        <lightning:layout >
-            <lightning:layoutItem >
-                <lightning:icon iconName="standard:contact" />
-            </lightning:layoutItem>
-            <lightning:layoutItem class="slds-m-left--small">
-                <p class="slds-text-title--caps slds-line-height--reset">Candidates</p>
-                <h1 class="slds-page-header__title slds-p-right--x-small">Candidate Viewer</h1>
-            </lightning:layoutItem>
-        </lightning:layout>
+    <!--&lt;!&ndash; Page header with a counter that displays total number of contacts &ndash;&gt;-->
+    <!--<div class="slds-page-header slds-page-header&#45;&#45;object-home">-->
+        <!--<lightning:layout >-->
+            <!--<lightning:layoutItem >-->
+                <!--<lightning:icon iconName="standard:contact" />-->
+            <!--</lightning:layoutItem>-->
+            <!--<lightning:layoutItem class="slds-m-left&#45;&#45;small">-->
+                <!--<p class="slds-text-title&#45;&#45;caps slds-line-height&#45;&#45;reset">Candidates</p>-->
+                <!--<h1 class="slds-page-header__title slds-p-right&#45;&#45;x-small">Candidate Viewer</h1>-->
+            <!--</lightning:layoutItem>-->
+        <!--</lightning:layout>-->
 
-        <lightning:layout >
-            <lightning:layoutItem >
-                <p class="slds-text-body--small">{!v.totalCandidates} Candidates • View Contacts Based on Lead Sources</p>
-            </lightning:layoutItem>
-        </lightning:layout>
-    </div>
+        <!--<lightning:layout >-->
+            <!--<lightning:layoutItem >-->
+                <!--<p class="slds-text-body&#45;&#45;small">{!v.totalCandidates} Candidates • View Contacts Based on Lead Sources</p>-->
+            <!--</lightning:layoutItem>-->
+        <!--</lightning:layout>-->
+    <!--</div>-->
 
-    <!-- Body with dropdown menu and list of contacts -->
-    <lightning:layout >
-        <lightning:layoutItem padding="horizontal-medium" >
-            <!-- Create a dropdown menu with options -->
-            <lightning:select aura:id="select" label="Lead Source" name="source"
-                              onchange="{!c.handleSelect}" class="slds-m-bottom--medium">
-                <option value="">-- Select a Lead Source --</option>
-                <option value="Referral" text="Referral"/>
-                <option value="Social Media" text="Social Media"/>
-                <option value="All" text="All"/>
-            </lightning:select>
+    <!--&lt;!&ndash; Body with dropdown menu and list of contacts &ndash;&gt;-->
+    <!--<lightning:layout >-->
+        <!--<lightning:layoutItem padding="horizontal-medium" >-->
+            <!--&lt;!&ndash; Create a dropdown menu with options &ndash;&gt;-->
+            <!--<lightning:select aura:id="select" label="Lead Source" name="source"-->
+                              <!--onchange="{!c.handleSelect}" class="slds-m-bottom&#45;&#45;medium">-->
+                <!--<option value="">&#45;&#45; Select a Lead Source &#45;&#45;</option>-->
+                <!--<option value="Referral" text="Referral"/>-->
+                <!--<option value="Social Media" text="Social Media"/>-->
+                <!--<option value="All" text="All"/>-->
+            <!--</lightning:select>-->
 
-            <!-- Iterate over the list of contacts and display them -->
-            <aura:iteration var="candidate" items="{!v.candidates}">
-                <!-- If you’re using a namespace, replace with myNamespace:contacts-->
-                <c:MyCandidateLightning candidate="{!candidate}"/>
-            </aura:iteration>
-        </lightning:layoutItem>
-    </lightning:layout>
+            <!--&lt;!&ndash; Iterate over the list of contacts and display them &ndash;&gt;-->
+            <!--<aura:iteration var="candidate" items="{!v.candidates}">-->
+                <!--&lt;!&ndash; If you’re using a namespace, replace with myNamespace:contacts&ndash;&gt;-->
+                <!--<c:MyCandidateLightning candidate="{!candidate}"/>-->
+            <!--</aura:iteration>-->
+        <!--</lightning:layoutItem>-->
+    <!--</lightning:layout>-->
 </aura:component>

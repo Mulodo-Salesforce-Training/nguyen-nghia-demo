@@ -41,11 +41,11 @@ trigger MR_EmailSenderTrigger on Job_Application__c (after update, after insert)
 		for(Candidate__c can: sentIMList) {
 			// debug candidate
 			System.debug(can.Email__c);
-			string template = MR_CandidateEmailTemplateUtil.GetEmailTemplate(can.First_Name__c);
 			if (can.Email__c != null) {
-				MR_EmailHelperUtil.sendMail(can.Email__c,
-						'Candidate Confirmation' ,
-						template) ;
+//				MR_EmailHelperUtil.sendMail(can.Email__c,
+//						'Candidate Confirmation' ,
+//						template) ;
+				MR_EmailHelperUtil.sendMailUsingSFTemplate(can);
 			}
 		}
 	}
