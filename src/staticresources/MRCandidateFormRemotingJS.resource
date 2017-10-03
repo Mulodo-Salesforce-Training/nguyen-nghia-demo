@@ -31,7 +31,6 @@ j$(document).ready(function() {
      * @Standard_VF_Method
      * */
     var submitCandidate = () => {
-
         // first name
         let First_Name__c = document.getElementById('First_Name__c').value;
         // last name

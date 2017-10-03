@@ -301,7 +301,7 @@
 
                                             <div class="slds-dropdown slds-dropdown--left" role="listbox">
                                                 <ul id="country-list-input" class="slds-dropdown__list slds-dropdown--length-5" role="presentation">
-                                                    <apex:variable  var="i" value="{!0}"/>
+                                                    <apex:variable var="i" value="{!0}"/>
                                                     <!--ITERATE THROUGH COUNTRYPICKLIST-->
                                                     <apex:repeat value="{!CountryPickList}" var="country">
                                                         <apex:variable value="{!i + 1 }" var="i"/>
@@ -423,7 +423,7 @@
 
                                             <div class="slds-dropdown slds-dropdown--left" role="listbox">
                                                 <ul id="country-list-input" class="slds-dropdown__list slds-dropdown--length-5" role="presentation">
-                                                    <apex:variable  var="eduIndex" value="{!0}"/>
+                                                    <apex:variable var="eduIndex" value="{!0}"/>
                                                     <!--ITERATE THROUGH educationList-->
                                                     <apex:repeat value="{!EducationPickList}" var="education">
                                                         <apex:variable value="{!eduIndex + 1 }" var="eduIndex"/>
@@ -459,7 +459,7 @@
                                     <!--<apex:commandButton styleClass="slds-button slds-button_neutral slds-m-top&#45;&#45;medium"-->
                                                         <!--value="Cancel"-->
                                                         <!--action="{!URLFOR($Page.MR_CandidateCustomListPage)}"/>-->
-                                    <apex:form>
+                                    <apex:form >
                                         <button class="slds-button slds-button_neutral slds-m-top--medium"
                                                 type="button"
                                                 onclick="redirectTo('{!URLFOR($Page.MR_CandidateCustomListPage)}')"
