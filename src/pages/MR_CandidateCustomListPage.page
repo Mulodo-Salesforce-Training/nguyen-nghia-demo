@@ -1,4 +1,4 @@
-<apex:page tabStyle="Candidate_Custom__tab"
+<apex:page tabStyle="Candidates_Modify__tab"
            standardController="Candidate__c"
            extensions="MR_CandidateCE"
            recordSetVar="candidates"
@@ -151,7 +151,7 @@
                                         <!--CUSTOM ACTION-->
                                         <td scope="col" data-label="View weather">
                                             <div class="slds-truncate" title="View weather">
-                                                <apex:commandLink action="{!URLFOR($Page.CandidateWeather,null, [ id=c.Id ])}" value="View Weather"/>
+                                                <apex:commandLink action="{!URLFOR($Page.MR_CandidateWeatherPage,null, [ id=c.Id ])}" value="View Weather"/>
                                             </div>
                                         </td>
 
