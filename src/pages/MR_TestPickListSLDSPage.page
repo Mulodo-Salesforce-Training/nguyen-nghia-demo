@@ -1,103 +1,104 @@
-<apex:page standardController="Candidate__c"
-           extensions="MR_CandidateAngularCC"
-           showHeader="false"
-           sidebar="false"
-           applyHtmlTag="true"
->
-    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
-    <head >
+<apex:page></apex:page>
+<!--<apex:page standardController="Candidate__c"-->
+           <!--extensions="MR_CandidateAngularCE"-->
+           <!--showHeader="false"-->
+           <!--sidebar="false"-->
+           <!--applyHtmlTag="true"-->
+<!--&gt;-->
+    <!--<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">-->
+    <!--<head >-->
         <!--<apex:includeScript value="{!URLFOR($Resource.AngularMinJS)}"/>-->
-        <!--LIGHTNING DESIGN SYSTEM-->
-        <apex:slds />
-    </head>
-    <body class="slds-scope" ng-app="myApp">
-        <div class="slds-form-element">
-            <label class="slds-form-element__label" for="combobox-unique-id">Search</label>
+        <!--&lt;!&ndash;LIGHTNING DESIGN SYSTEM&ndash;&gt;-->
+        <!--<apex:slds />-->
+    <!--</head>-->
+    <!--<body class="slds-scope" ng-app="myApp">-->
+        <!--<div class="slds-form-element">-->
+            <!--<label class="slds-form-element__label" for="combobox-unique-id">Search</label>-->
 
-            <div class="slds-form-element__control" ng-controller="pickListCtrl">
-                <div class="slds-combobox_container slds-size_small">
-                    <!--TOGGLE SLDS-IS-OPEN HERE-->
-                    <div class="slds-combobox slds-dropdown-trigger
-                                slds-dropdown-trigger_click
-                                slds-combobox-picklist"
-                         ng-class="{'slds-is-open': isPickListOpen}"
-                         aria-expanded="false" aria-haspopup="listbox" role="combobox">
+            <!--<div class="slds-form-element__control" ng-controller="pickListCtrl">-->
+                <!--<div class="slds-combobox_container slds-size_small">-->
+                    <!--&lt;!&ndash;TOGGLE SLDS-IS-OPEN HERE&ndash;&gt;-->
+                    <!--<div class="slds-combobox slds-dropdown-trigger-->
+                                <!--slds-dropdown-trigger_click-->
+                                <!--slds-combobox-picklist"-->
+                         <!--ng-class="{'slds-is-open': isPickListOpen}"-->
+                         <!--aria-expanded="false" aria-haspopup="listbox" role="combobox">-->
 
-                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none" ng-click="togglePickList()">
-                            <input type="text" class="slds-input slds-combobox__input"
-                                   id="combobox-unique-id"
-                                   aria-controls="listbox-unique-id"
-                                   autocomplete="off" role="textbox"
-                                   value="{{selectedValue}}"
-                                   placeholder="Select an Option" readonly="true"/>
-                            <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
-                                  title="Description of icon when needed">
-                                            <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
-                                                 aria-hidden="true">
-                                              <use xlink:href="{!URLFOR($Asset.SLDS,"/assets/icons/utility-sprite/svg/symbols.svg#down")}"/>
-                                            </svg>
-                                            <span class="slds-assistive-text">Description of icon</span>
-                                        </span>
-                        </div>
+                        <!--<div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none" ng-click="togglePickList()">-->
+                            <!--<input type="text" class="slds-input slds-combobox__input"-->
+                                   <!--id="combobox-unique-id"-->
+                                   <!--aria-controls="listbox-unique-id"-->
+                                   <!--autocomplete="off" role="textbox"-->
+                                   <!--value="{{selectedValue}}"-->
+                                   <!--placeholder="Select an Option" readonly="true"/>-->
+                            <!--<span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"-->
+                                  <!--title="Description of icon when needed">-->
+                                            <!--<svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"-->
+                                                 <!--aria-hidden="true">-->
+                                              <!--<use xlink:href="{!URLFOR($Asset.SLDS,"/assets/icons/utility-sprite/svg/symbols.svg#down")}"/>-->
+                                            <!--</svg>-->
+                                            <!--<span class="slds-assistive-text">Description of icon</span>-->
+                                        <!--</span>-->
+                        <!--</div>-->
 
-                        <div id="listbox-unique-id" role="listbox">
-                            <ul class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid"
-                                role="presentation">
-                                <!--LIST ITEM REPEAT HERE-->
-                                <li role="presentation"
-                                    class="slds-listbox__item"
-                                    ng-click="onSelectOption($index, edu.value)"
-                                    ng-repeat="edu in educationPickList track by $index">
-                                    <!--TOGGLE CLASS ISSELECTED OF ITEM HERE SLDS-IS-SELECTED-->
-                                    <span id="item__{{$index}}"
-                                          class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-media_center"
-                                          ng-class="{'slds-is-selected': selectedIndex == $index}"
-                                          role="option">
-                                                <!--ICON-->
-                                                <span class="slds-media__figure">
-                                                    <svg class="slds-icon slds-icon_x-small slds-listbox__icon-selected" aria-hidden="true">
-                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                             xlink:href="{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#check")}"/>
-                                                    </svg>
-                                                </span>
-                                                <!--LABEL-->
-                                                <span class="slds-media__body">
-                                                    <span class="slds-truncate" title="{{edu.label}}">{{edu.label}}</span>
-                                                        <!--Option A-->
-                                                    </span>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
+                        <!--<div id="listbox-unique-id" role="listbox">-->
+                            <!--<ul class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid"-->
+                                <!--role="presentation">-->
+                                <!--&lt;!&ndash;LIST ITEM REPEAT HERE&ndash;&gt;-->
+                                <!--<li role="presentation"-->
+                                    <!--class="slds-listbox__item"-->
+                                    <!--ng-click="onSelectOption($index, edu.value)"-->
+                                    <!--ng-repeat="edu in educationPickList track by $index">-->
+                                    <!--&lt;!&ndash;TOGGLE CLASS ISSELECTED OF ITEM HERE SLDS-IS-SELECTED&ndash;&gt;-->
+                                    <!--<span id="item__{{$index}}"-->
+                                          <!--class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-media_center"-->
+                                          <!--ng-class="{'slds-is-selected': selectedIndex == $index}"-->
+                                          <!--role="option">-->
+                                                <!--&lt;!&ndash;ICON&ndash;&gt;-->
+                                                <!--<span class="slds-media__figure">-->
+                                                    <!--<svg class="slds-icon slds-icon_x-small slds-listbox__icon-selected" aria-hidden="true">-->
+                                                        <!--<use xmlns:xlink="http://www.w3.org/1999/xlink"-->
+                                                             <!--xlink:href="{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#check")}"/>-->
+                                                    <!--</svg>-->
+                                                <!--</span>-->
+                                                <!--&lt;!&ndash;LABEL&ndash;&gt;-->
+                                                <!--<span class="slds-media__body">-->
+                                                    <!--<span class="slds-truncate" title="{{edu.label}}">{{edu.label}}</span>-->
+                                                        <!--&lt;!&ndash;Option A&ndash;&gt;-->
+                                                    <!--</span>-->
+                                    <!--</span>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<script>-->
 
-            /** Use Angular JS To shorten out the number of codeline in template
-             * @Module
-             * */
-            angular.module("myApp", [])
-                    .controller("pickListCtrl", ($scope) => {
-                        // control of picklist
-                        $scope.isPickListOpen = true;
-                        $scope.selectedIndex = null;
+            <!--/** Use Angular JS To shorten out the number of codeline in template-->
+             <!--* @Module-->
+             <!--* */-->
+            <!--angular.module("myApp", [])-->
+                    <!--.controller("pickListCtrl", ($scope) => {-->
+                        <!--// control of picklist-->
+                        <!--$scope.isPickListOpen = true;-->
+                        <!--$scope.selectedIndex = null;-->
 
-                        $scope.educationPickList = {!educationPickList};
+                        <!--$scope.educationPickList = {!educationPickList};-->
 
-                        $scope.togglePickList = () => {
-                            $scope.isPickListOpen = !$scope.isPickListOpen;
-                        };
+                        <!--$scope.togglePickList = () => {-->
+                            <!--$scope.isPickListOpen = !$scope.isPickListOpen;-->
+                        <!--};-->
 
-                        $scope.onSelectOption =  (index, value) => {
-                            $scope.selectedIndex = index;
-                            $scope.selectedValue = value;
-                            $scope.isPickListOpen = false;
-                        }
+                        <!--$scope.onSelectOption =  (index, value) => {-->
+                            <!--$scope.selectedIndex = index;-->
+                            <!--$scope.selectedValue = value;-->
+                            <!--$scope.isPickListOpen = false;-->
+                        <!--}-->
 
-                    })
-        </script>
-    </body>
-    </html>
-</apex:page>
+                    <!--})-->
+        <!--</script>-->
+    <!--</body>-->
+    <!--</html>-->
+<!--</apex:page>-->

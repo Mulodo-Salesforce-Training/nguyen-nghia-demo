@@ -19,17 +19,11 @@ trigger MR_PositionTrigger on Position__c(before insert) {
 						insertPos.addError(String.format(
 											ERR_TEMPLATE,
 											new List<String>{conflictPos.Name}));
-					} else {
-						return;
 					}
 				}
 			}
 
-		} else {
-			return;
 		}
-	} else {
-		return ;
 	}
 
 

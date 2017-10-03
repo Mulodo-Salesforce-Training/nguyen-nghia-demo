@@ -5,13 +5,19 @@
 private class MR_EmailSenderTriggerTest {
 	@testSetup static void dataFactory() {
 		// data factory
-		Candidate__c testCan = new Candidate__c(First_Name__c = 'Nghia', Last_Name__c ='Nguyen', Phone__c = '01212132815', Email__c = 'nguyen.nghia@mulodo.com');
+		Candidate__c testCan = new Candidate__c(
+				First_Name__c = 'Nghia',
+				Last_Name__c ='Nguyen',
+				Phone__c = '01212132815',
+				Email__c = 'nguyen.nghia@mulodo.com'
+		);
 		insert testCan;
 		Position__c testPos = new Position__c(Name='C# Test Pos');
 		insert testPos;
 		Job_Application__c testApp = new Job_Application__c(Candidate__c = testCan.Id, Position__c = testPos.Id, Status__c ='New');
 		insert testApp;
 	}
+
 	@isTest static void TestOnCreate() {
 		// get data from test factory
 		Candidate__c testCan = [SELECT Id FROM Candidate__c WHERE First_Name__c = 'Nghia'];
@@ -19,9 +25,11 @@ private class MR_EmailSenderTriggerTest {
 
 		// start test
 		Test.startTest();
-		Job_Application__c existApp = new Job_Application__c(Candidate__c = testCan.Id, Position__c = testPos.Id, Status__c ='Schedule Interviews');
-		insert existApp;
+			Job_Application__c existApp = new Job_Application__c(Candidate__c = testCan.Id, Position__c = testPos.Id, Status__c ='Schedule Interviews');
+			insert existApp;
+			Integer emailInvocations = Limits.getEmailInvocations();
 		Test.stopTest();
+		System.assertEquals(1, emailInvocations, 'An email should be send');
 		/**@TODO Add System Assert Here*/
 	}
 
@@ -31,9 +39,11 @@ private class MR_EmailSenderTriggerTest {
 
 		// test
 		Test.startTest();
-		existsApp.Status__c = 'Schedule Interviews';
-		update existsApp;
+			existsApp.Status__c = 'Schedule Interviews';
+			update existsApp;
+			Integer emailInvocations = Limits.getEmailInvocations();
 		Test.stopTest();
+		System.assertEquals(1, emailInvocations, 'An email should be send');
 	}
 
 }

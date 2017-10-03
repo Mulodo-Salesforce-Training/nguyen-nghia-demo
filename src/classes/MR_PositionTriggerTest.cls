@@ -10,8 +10,8 @@ private class MR_PositionTriggerTest {
 
 		// START TEST
 		Test.startTest();
-		Position__c dupPos = new Position__c(Name= 'Conflict Test');
-		Database.SaveResult res = Database.insert(dupPos, false);
+			Position__c dupPos = new Position__c(Name= 'Conflict Test');
+			Database.SaveResult res = Database.insert(dupPos, false); // use Database.SaveResult to assert SaveResult getErrors()
 		Test.stopTest();
 
 		// ASSERT

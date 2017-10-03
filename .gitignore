@@ -4,11 +4,12 @@
 .apex/
 # Project FFile ignore
 recruitment_app.iml
-src/package.xml
 .sdk/
+# Salesforce unnecessary git
 src/applications
 src/labels
 src/layouts
 src/objects
 src/tabs
 src/workflows
+src/package.xml

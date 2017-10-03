@@ -1,53 +1,54 @@
-<apex:page standardController="Candidate__c"
-           extensions="MR_CandidateAngularCC"
-           showHeader="false" applyHtmlTag="true">
-    <!--TO USING ICON-->
-    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
-        <head>
-            <!--APEX STYLE SHEET-->
-            <apex:slds />
-            <apex:includeScript value="{!URLFOR($Resource.angular_min_js)}"/>
-        </head>
-        <body ng-app="demoApp" class="slds-container" ng-controller="myCtrl">
+<apex:page></apex:page>
+<!--<apex:page standardController="Candidate__c"-->
+           <!--extensions="MR_CandidateAngularCC"-->
+           <!--showHeader="false" applyHtmlTag="true">-->
+    <!--&lt;!&ndash;TO USING ICON&ndash;&gt;-->
+    <!--<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">-->
+        <!--<head>-->
+            <!--&lt;!&ndash;APEX STYLE SHEET&ndash;&gt;-->
+            <!--<apex:slds />-->
+            <!--<apex:includeScript value="{!URLFOR($Resource.angular_min_js)}"/>-->
+        <!--</head>-->
+        <!--<body ng-app="demoApp" class="slds-container" ng-controller="myCtrl">-->
 
-            <div class="slds-scope">
-                <!--DEMO ICON-->
-                <span class="slds-icon_container slds-icon-standard-account" title="description of icon when needed">
-  <svg aria-hidden="true" class="slds-icon">
-    <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>
-  </svg>
-  <span class="slds-assistive-text">Account Icon</span>
-</span>
+            <!--<div class="slds-scope">-->
+                <!--&lt;!&ndash;DEMO ICON&ndash;&gt;-->
+                <!--<span class="slds-icon_container slds-icon-standard-account" title="description of icon when needed">-->
+  <!--<svg aria-hidden="true" class="slds-icon">-->
+    <!--<use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>-->
+  <!--</svg>-->
+  <!--<span class="slds-assistive-text">Account Icon</span>-->
+<!--</span>-->
 
-                <form class="slds-form">
-                    <label>Education Level</label>
-                    EDUCATION PICK LIST
-                    <select >
-                        <option ng-repeat="op in educationPickList">
-                            {{op.label}}
-                        </option>
-                    </select>
-                </form>
-                <table>
-                    <tr>
-                        <td>Name</td>
-                        <td>First Name</td>
-                    </tr>
-                    <tr ng-repeat="can in candidates">
-                        <td>{{can.First_Name__c}}</td>
-                        <td>{{can.Last_Name__c}}</td>
-                    </tr>
-                </table>
-            </div>
-            <script>
-                angular.module("demoApp", [])
-                        .controller("myCtrl", ($scope) => {
-                            $scope.candidates = {!JSONcandidates};
-                            $scope.educationPickList = {!educationPickList};
-                        })
-            </script>
-        </body>
+                <!--<form class="slds-form">-->
+                    <!--<label>Education Level</label>-->
+                    <!--EDUCATION PICK LIST-->
+                    <!--<select >-->
+                        <!--<option ng-repeat="op in educationPickList">-->
+                            <!--{{op.label}}-->
+                        <!--</option>-->
+                    <!--</select>-->
+                <!--</form>-->
+                <!--<table>-->
+                    <!--<tr>-->
+                        <!--<td>Name</td>-->
+                        <!--<td>First Name</td>-->
+                    <!--</tr>-->
+                    <!--<tr ng-repeat="can in candidates">-->
+                        <!--<td>{{can.First_Name__c}}</td>-->
+                        <!--<td>{{can.Last_Name__c}}</td>-->
+                    <!--</tr>-->
+                <!--</table>-->
+            <!--</div>-->
+            <!--<script>-->
+                <!--angular.module("demoApp", [])-->
+                        <!--.controller("myCtrl", ($scope) => {-->
+                            <!--$scope.candidates = {!JSONcandidates};-->
+                            <!--$scope.educationPickList = {!educationPickList};-->
+                        <!--})-->
+            <!--</script>-->
+        <!--</body>-->
 
-    </html>
+    <!--</html>-->
 
-</apex:page>
+<!--</apex:page>-->
