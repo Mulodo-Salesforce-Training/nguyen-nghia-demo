@@ -10,6 +10,7 @@ src/applications
 src/labels
 src/layouts
 src/objects
+src/email
 src/tabs
 src/workflows
 src/package.xml
