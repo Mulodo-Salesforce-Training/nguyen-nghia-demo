@@ -39,6 +39,6 @@ public class MR_CandidateFormCE {
 	@RemoteAction
 	public static string getJSONCandidates() {
 		// serialize to JSON
-		return JSON.serialize([SELECT First_Name__c, Last_Name__c FROM Candidate__c]);
+		return JSON.serialize([SELECT First_Name__c, Last_Name__c FROM Candidate__c LIMIT 10]);
 	}
 }
