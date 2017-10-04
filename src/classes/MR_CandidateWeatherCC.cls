@@ -6,15 +6,16 @@ public class MR_CandidateWeatherCC {
 	private static String API_KEY; // will retrieve from metadata
 	@TestVisible private String cityName = 'Saigon,vietnam'; // default city if not declare
 	// endpoint format
-	private static String API_URL_FORMAT = 'http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}';// 0: cityName, 1: apiKey
-	public MR_WeatherViewModel CurrentWeather { get;set; }
+	private static final String BASE_URL = 'http://api.openweathermap.org/data/2.5/weather';
+	private static final String API_URL_FORMAT = BASE_URL + 'q={0}&appid={1}';// 0: cityName, 1: apiKey
+	public MR_WeatherViewModel currentWeather { get;set; }
 
 	// constructor
 	public MR_CandidateWeatherCC() {
 		Id id = ApexPages.currentPage().getParameters().get('id'); // get id by ApexPages.currentPage() context
 		cityName = GetCityByCandidateId(id) != null ? GetCityByCandidateId(id) : cityName; //ternary operator
 		API_KEY = [SELECT apikey__c FROM External_App_Setting__mdt WHERE label = 'weatherAPI'].apikey__c; // retrieve apiKey from AppSetting metadata a
-		CurrentWeather = getWeather(cityName);
+		currentWeather = getWeather(cityName);
 	}
 
 	public static MR_WeatherViewModel getWeather(String cityName) {

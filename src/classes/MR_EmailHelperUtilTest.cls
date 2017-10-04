@@ -3,9 +3,26 @@
  */
 @isTest
 private class MR_EmailHelperUtilTest {
+	@TestSetup static void dataFactory() {
+		// data factory
+		// need to add extra contact because emailSenderTrigger is base on roll back email sending to a random contact
+		Contact contact = new Contact(
+				Salutation = 'Ms.',
+				LastName = 'Nghia',
+				Email='test@mulodo.com'
+		);
+		insert contact;
+		Candidate__c candidate = new Candidate__c(
+				First_Name__c = 'Nghia',
+				Last_Name__c ='Nguyen',
+				Email__c = 'nguyen.nghia@mulodo.com',
+				Phone__c = '01212132815'
+		);
+		insert candidate;
+	}
 	/** Test Case: Send to Null Candidate ===> email should not be sent
 	*/
-	@isTest(SeeAllData = true) static void TestSendMessageErr() {
+	@isTest() static void TestSendMessageErr() {
 		Test.startTest();
 			MR_EmailHelperUtil.sendMailUsingSFTemplate(null);
 			Integer emailInvocations = Limits.getEmailInvocations();
@@ -14,15 +31,8 @@ private class MR_EmailHelperUtilTest {
 	}
 	/** Test Case: Send to Correct Candidate ===> expect email should be sent
 	*/
-	@isTest(SeeAllData = true) static void TestSendMessageWithTemplate() {
-		// data factory
-		Candidate__c candidate = new Candidate__c(
-			First_Name__c = 'Nghia',
-			Last_Name__c ='Nguyen',
-			Email__c = 'nguyen.nghia@mulodo.com',
-			Phone__c = '01212132815'
-		);
-		insert candidate;
+	@isTest() static void TestSendMessageWithTemplate() {
+		Candidate__c candidate = [SELECT Id, Email__c FROM Candidate__c WHERE First_Name__c = 'Nghia' LIMIT 1];
 
 		// test
 		Test.startTest();

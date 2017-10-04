@@ -42,8 +42,8 @@ private class MR_CandidateWeatherCCTest {
 			MR_CandidateWeatherCC weatherController = new MR_CandidateWeatherCC();
 		Test.stopTest();
 
-		System.assert(weatherController.CurrentWeather != null);
-		System.assert(weatherController.CurrentWeather.name == 'Shuzenji'); // expect to use the correct mock API
+		System.assert(weatherController.currentWeather != null);
+		System.assert(weatherController.currentWeather.name == 'Shuzenji'); // expect to use the correct mock API
 	}
 
 	/** Test Case: Test Constructor
@@ -63,8 +63,8 @@ private class MR_CandidateWeatherCCTest {
 		Test.stopTest();
 
 		System.assert(WeatherController.cityName == 'Saigon,vietnam');
-		System.assert(weatherController.CurrentWeather != null);
-		System.assert(weatherController.CurrentWeather.name == 'Shuzenji'); // expect to use the correct mock API
+		System.assert(weatherController.currentWeather != null);
+		System.assert(weatherController.currentWeather.name == 'Shuzenji'); // expect to use the correct mock API
 	}
 
 	/** Test Static Method GetCityByCandidateId

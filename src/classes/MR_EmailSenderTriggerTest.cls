@@ -5,6 +5,14 @@
 private class MR_EmailSenderTriggerTest {
 	@testSetup static void dataFactory() {
 		// data factory
+		// need to add extra contact because emailSenderTrigger is base on roll back email sending to a random contact
+		Contact contact = new Contact(
+				Salutation = 'Ms.',
+				LastName = 'Nghia',
+				Email='test@mulodo.com'
+		);
+		insert contact;
+
 		Candidate__c testCan = new Candidate__c(
 				First_Name__c = 'Nghia',
 				Last_Name__c ='Nguyen',
@@ -25,11 +33,16 @@ private class MR_EmailSenderTriggerTest {
 
 		// start test
 		Test.startTest();
-			Job_Application__c existApp = new Job_Application__c(Candidate__c = testCan.Id, Position__c = testPos.Id, Status__c ='Schedule Interviews');
-			insert existApp;
+			Job_Application__c newApp = new Job_Application__c(
+					Candidate__c = testCan.Id,
+					Position__c = testPos.Id,
+					Status__c ='Schedule Interviews'
+			);
+			insert newApp;
 			Integer emailInvocations = Limits.getEmailInvocations();
 		Test.stopTest();
-		System.assertEquals(1, emailInvocations, 'An email should be send');
+		System.assert(newApp.Id != null, 'New Application created');
+		System.assertEquals(2, emailInvocations, 'An email should be send');
 		/**@TODO Add System Assert Here*/
 	}
 
@@ -43,7 +56,8 @@ private class MR_EmailSenderTriggerTest {
 			update existsApp;
 			Integer emailInvocations = Limits.getEmailInvocations();
 		Test.stopTest();
-		System.assertEquals(1, emailInvocations, 'An email should be send');
+		System.assertEquals(existsApp.Status__c, 'Schedule Interviews', 'Update Exist App Success');
+		System.assertEquals(2, emailInvocations, 'An email should be send');
 	}
 
 }

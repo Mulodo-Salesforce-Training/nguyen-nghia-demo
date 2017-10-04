@@ -14,7 +14,7 @@ trigger MR_PositionTrigger on Position__c(before insert) {
 			for (Position__c conflictPos: conflictPosList) {
 				// foreach conflictPos find the conflict insert from trigger.new that match Name with the conflictPos
 				for (Position__c insertPos: Trigger.new) {
-					// if found conflict ===> through error to insertPos from trigger.new
+					// if found conflict ===> throw error to insertPos from trigger.new
 					if(insertPos.Name.equals(conflictPos.Name)) {
 						insertPos.addError(String.format(
 											ERR_TEMPLATE,
@@ -25,25 +25,5 @@ trigger MR_PositionTrigger on Position__c(before insert) {
 
 		}
 	}
-
-
-//	OLD VERSION: NOT USING BULK QUERY
-//	if(Trigger.isInsert && !Trigger.new.isEmpty()) {
-//		// using bulk query
-//		List<Position__c> conflictList = [SELECT Id FROM Position__c WHERE Name IN :Trigger.new];
-//		for(Position__c newPos: Trigger.new) {
-//			// not need to use bulk query here because we have to send error to each insert object
-//			List<Position__c> conflictList = [SELECT Id FROM Position__c WHERE Name =: newPos.Name];
-//			// if conflict List.length > 0 ===> means already existed this name
-//			if(!conflictList.isEmpty()) {
-//
-//				String errorMsg = String.format(errorTemplate, new String[] {newPos.Name});
-//				// through message
-//				newPos.addError(errorMsg);
-//			}
-//		}
-//	}
-
-
 
 }

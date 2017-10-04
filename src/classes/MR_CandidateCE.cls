@@ -12,5 +12,4 @@ public with sharing class MR_CandidateCE {
 		standardController.setPagesize(5);
 	}
 
-
 }
