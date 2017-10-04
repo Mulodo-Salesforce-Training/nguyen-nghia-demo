@@ -26,18 +26,16 @@ public class MR_CandidateFormCE {
 		return educationPickList;
 	}
 
-	/** Description: To Test Pick List Value From Apex and describe on form (Experiment only!)
-	* 	@Remoting Javascript
-	*/
+	/** Description: To Test Pick List Value From Apex and describe on form
+	@Remoting Javascript
+*/
 	@RemoteAction
 	public static string getJSONEducationPickList() {
 		Schema.DescribeFieldResult educationField = Candidate__c.Education__c.getDescribe();
 		List<Schema.PicklistEntry> countryPickList = educationField.getPicklistValues();
 		return JSON.serialize(countryPickList);
 	}
-	/** Description: Get Candidate List in JSON String(Experiment only!)
-	* 	@Remoting Javascript
-	*/
+
 	@RemoteAction
 	public static string getJSONCandidates() {
 		// serialize to JSON
